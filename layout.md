@@ -1,5 +1,5 @@
 spock_paper.tex
 Introduction.tex
-section_Observations_label_sec_Observations__.tex
+Observations.tex
 figures/m0416_transient_NW/m0416_transient_NW.png
   
