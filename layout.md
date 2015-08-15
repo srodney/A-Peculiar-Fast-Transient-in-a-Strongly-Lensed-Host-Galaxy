@@ -2,4 +2,5 @@ spock_paper.tex
 Introduction.tex
 Observations.tex
 figures/m0416_transient_NW/m0416_transient_NW.png
-  
+figures/m0416_transient_SE/m0416_transient_SE.png  
+figures/spock_predictions/spock_predictions.png 
