@@ -1,4 +1,4 @@
-spock_paper.tex
+Abstract.tex
 Introduction.tex
 Observations.tex
 figures/m0416_transient_NW/m0416_transient_NW.png
