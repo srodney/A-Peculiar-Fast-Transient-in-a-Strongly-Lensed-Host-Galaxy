@@ -1,6 +1,6 @@
 Abstract.tex
 Introduction.tex
-figures/spock_detection_image.001/spock_detection_image.001.png
+figures/detection_image/detection_image.png
 Observations.tex
 LightCurves.tex
 figures/spock_lightcurves/spock_lightcurves.png
