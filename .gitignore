@@ -1,3 +1,9 @@
 .DS_Store
 *~
 #*#
+*.bbl
+*.blg
+*Notes.bib
+*.out
+*.aux
+*.log

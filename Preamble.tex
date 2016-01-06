@@ -1,0 +1,157 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  PREAMBLE: sets up compiler modes, loads packages, defines macros, etc
+%  Steve Rodney, 2012
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+% COMPILER MODES
+%%%%%%%%%%%%%%%%%%%%
+
+%% Set default compiler modes 
+%% (these will be overridden by the -options.tex  file below, if it exists)
+
+% Changetext mode : highlight modified text in bold blue font
+\newif{\ifchangetext}
+%\changetexttrue
+\changetextfalse
+
+\documentclass[iop]{emulateapj}
+\citestyle{aa} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+% PACKAGES INCLUDED
+%%%%%%%%%%%%%%%%%%%%
+\usepackage{ifthen}
+\usepackage{natbib}   % reference citations and bibliography
+\usepackage{amsmath}  % extended math symbols
+\usepackage{hyperref}      % url text formatting
+\usepackage[usenames,dvipsnames]{xcolor}  % colored text
+\usepackage{longtable}
+\usepackage{xspace} % def commands that appear not to eat a space
+\usepackage{enumerate}% enumerated lists with alternate indexing
+%\usepackage{breqn}
+%\usepackage{lscape}  % doesn't work with pdflatex
+%\usepackage{pdflscape}  % doesn't work with emulateapj?
+
+%\usepackage{amssymb}  % extended symbols lib
+%\usepackage{verbatim} % verbatim text formatting
+%\usepackage{url}      % url text formatting
+%\usepackage{multirow}  % muti-row table cells
+%\usepackage{amsmath}  % extended equations lib (split)
+%\usepackage{mathrsfs} % extended math fonts (mathscr)
+%\usepackage{paralist} % inline enumeration (for Table ref lists)
+%\usepackage{authblk}
+%\usepackage{appendix}
+%\usepackage{array}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TODO comments in red text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\todo}[1]{{ \textcolor{red}{{\bf TODO:} #1}}}
+\newcommand{\TODO}[1]{{ \textcolor{red}{{\bf TODO:} #1}}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PDF mode settings : Auto-select eps or pdf figures 
+% based  on the compiler used (i.e. latex vs pdflatex)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ifx\pdfoutput\undefined
+  \pdffalse
+  \DeclareGraphicsExtensions{.eps,.ps}
+\else
+  \ifnum\pdfoutput=1
+    % \pdftrue
+    \DeclareGraphicsExtensions{.pdf,.png,.jpg}
+  \else
+    % \pdffalse
+    \DeclareGraphicsExtensions{.eps,.ps}
+  \fi
+\fi
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% AUTHOR-DEFINED MACROS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Cosmology:
+\def\Om{\ensuremath{\Omega_{\rm m}}\xspace}
+\def\Ot{\ensuremath{\Omega_{\rm tot}}\xspace}
+\def\Ob{\ensuremath{\Omega_{\rm b}}\xspace}
+\def\OL{\ensuremath{\Omega_{\Lambda}}\xspace}
+\def\Ok{\ensuremath{\Omega_{\rm k}}\xspace}
+\def\om{\ensuremath{\omega_{\rm m}}\xspace}
+\def\ob{\ensuremath{\omega_{\rm b}}\xspace}
+\def\wo{\ensuremath{w_0}\xspace}
+\def\wa{\ensuremath{w_{\rm a}}\xspace}
+\def\lcdm{$\Lambda$CDM\xspace}
+\def\LCDM{$\Lambda$CDM\xspace}
+\def\wcdm{$w$CDM\xspace}
+\def\Ho{\ensuremath{H_0}\xspace}
+\def\DA{\ensuremath{D_A}\xspace}
+\def\DL{\ensuremath{D_L}\xspace}
+
+% Astronomy:
+\def\arcsec{\ensuremath{^{\prime\prime}}\xspace} 
+\def\farcm{\mbox{\ensuremath{.\mkern-4mu^\prime}}}
+\def\farcs{\mbox{\ensuremath{.\!\!^{\prime\prime}}}}
+\def\fdg{\mbox{\ensuremath{.\!\!^\circ}}}
+\def\arcdeg{\ensuremath{^{\circ}}\xspace}
+\def\hgpcq{\mbox{$h^{-3}$Gpc$^3$}\xspace}
+\def\hmpcq{\mbox{$h^{-3}$Mpc$^3$}\xspace}
+\def\perhmpcq{\mbox{$h^{3}$Mpc$^{-3}$}\xspace}
+\def\hmpc{\mbox{$h^{-1}$Mpc}\xspace}
+\def\hmpci{\mbox{$h$\,Mpc$^{-1}$}\xspace}
+\def\mpc{\mbox{Mpc}\xspace}
+\def\mpci{\mbox{Mpc$^{-1}$}\xspace}
+\def\mpcq{\mbox{Mpc$^{-3}$}\xspace}
+\def\Msun{\mbox{M$_{\odot}$}\xspace}
+\def\Av{\mbox{$A_V$}\xspace}
+\def\Rv{\mbox{$R_V$}\xspace}
+\def\Ha{\mbox{H$\alpha$}\xspace}
+\newcommand\ionline[2]{#1{\scshape{#2}}}
+
+% Supernovae : 
+\def\CCSN{CC\,SN\xspace}
+\def\CCSNe{CC\,SNe\xspace}
+\def\SNIa{SN\,Ia\xspace}
+\def\SNeIa{SNe\,Ia\xspace}
+\def\Mch{\mbox{M$_{\rm Ch}$}\xspace}
+\def\NiFiftySix{\ensuremath{^{56}\mbox{Ni}}\xspace}
+\def\CoFiftySix{\ensuremath{^{56}\mbox{Co}}\xspace}
+\def\FeFiftySix{\ensuremath{^{56}\mbox{Fe}}\xspace}
+\def\dmfifteen{\ensuremath{\Delta\mbox{m}_{15}}\xspace}
+\def\deltamfifteen{\ensuremath{\Delta\mbox{m}_{15}}\xspace}
+
+% Missions:
+\def\HST{{\it HST}\xspace}
+\def\Hubble{{\it Hubble}\xspace}
+\def\Hubbles{{\it Hubble's}\xspace}
+\def\Spitzer{{\it Spitzer}\xspace}
+\def\Chandra{{\it Chandra}\xspace}
+\def\Herschel{{\it Herschel}\xspace}
+\def\XMM{{\it XMM}\xspace}
+
+
+
+% Paper aliases 
+\defcitealias{Kelly:2015}{K15}
+\def\K15{\citetalias{Kelly:2015}\xspace}
+
+\defcitealias{Patel:2014}{P14}
+\def\P14{\citetalias{Patel:2014}\xspace}
+
+
+% Specific to this paper: 
+\def\spock{HFF14Spo\xspace}
+\def\spockone{HFF14Spo1\xspace}
+\def\spocktwo{HFF14Spo2\xspace}
+\def\spockNW{HFF14Spo1\xspace}
+\def\spockSE{HFF14Spo2\xspace}
+\def\macs0416{MACS\,J0416.1-2403\xspace}
+\def\MACS0416{MACS\,J0416.1-2403\xspace}
+

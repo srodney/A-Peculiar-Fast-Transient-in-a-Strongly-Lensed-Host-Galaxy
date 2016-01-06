@@ -8,5 +8,6 @@ LensingModels.tex
 figures/spock_predictions/spock_predictions.png
 figures/grale_td_histogram/grale_td_histogram.png
 AstrophysicalModels.tex
+Acknowledgments.tex
 
   
