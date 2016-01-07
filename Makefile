@@ -19,26 +19,17 @@
 
 
 # Set the variable PAPER to the root name of your .tex document
-PAPER= SpockPaper
+PAPER= spock_localbuild
 
-default: pdf
+default: local
 
-all: postscript manuscript grayscale changetext pdf
+all: clean local
 clean:
-	rm -f *.aux *.log *.bbl *.blg *.lof *.lot *.toc *options.tex
+	rm -f *.aux *.log *.bbl *.blg *.lof *.lot *.toc 
 
-#make the pdf for arXiv/ApJ submission (no bibtex)
-submit: $(PAPER).tex
-	pdflatex $(PAPER); \
-	pdflatex $(PAPER); \
-	open $(PAPER).pdf
-
-#Generate a compact pdf file using emulateapj with bibtex
-pdf: $(PAPER).tex
-	pdflatex $(PAPER); \
-	bibtex $(PAPER); \
-	pdflatex $(PAPER); \
-	pdflatex $(PAPER); \
+#Generate a pdf file using a modified python script from et_eq
+local: 
+	local_build.py --build-dir . --filename spock_localbuild --title-input --n-runs-after-bibtex 2
 	open $(PAPER).pdf
 
 #quick update (single compile)
