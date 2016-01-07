@@ -29,7 +29,7 @@ clean:
 
 #Generate a pdf file using a modified python script from et_eq
 local: 
-	local_build.py --build-dir . --filename spock_localbuild --title-input --n-runs-after-bibtex 2
+	local_build_withauthors.py --build-dir . --filename spock_localbuild --title-input --n-runs-after-bibtex 2
 	open $(PAPER).pdf
 
 #quick update (single compile)
