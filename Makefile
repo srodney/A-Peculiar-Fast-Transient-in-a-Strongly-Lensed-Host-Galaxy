@@ -32,6 +32,9 @@ local:
 	local_build_withauthors.py --build-dir . --filename spock_localbuild --title-input --n-runs-after-bibtex 2
 	open $(PAPER).pdf
 
+open:
+	open $(PAPER).pdf
+
 #quick update (single compile)
 update: $(PAPER).tex
 	pdflatex $(PAPER); \

@@ -4,46 +4,70 @@ To evaluate possible astrophysical explanations for the two \spock
 events, let us first summarize the information we have:
 
 \begin{enumerate}
-\item{Two events appeared in separate images of a single galaxy,
+\item{\label{obs:twoevents} Two events appeared in separate images of a single galaxy,
   separated by $\sim$120 days in the rest frame (240 days in the
   observer frame). \label{itm:TwoEvents}}
-\item{Lensing models predict a time delay between the two host images
+\item{\label{obs:timedelay} Lensing models predict a time delay between the two host images
   of $\pm50$ days or less in the observer frame.}
-\item{Each event lasted for $<$15 rest-frame days\label{itm:FastLC}}
-\item{After correcting for lensing magnification of $\mu\sim30$, both
+\item{\label{obs:timescale} Each event lasted for $<$15 rest-frame days\label{itm:FastLC}}
+\item{\label{obs:luminosity} After correcting for lensing magnification of $\mu\sim30$, both
   events reach a peak luminosity of $\sim10^{41}$ ergs s$^{-1}$
   \textcolor{red}{(NEED TO REFINE THIS NUMBER)}}
-\item{\textcolor{red}{ADD IN X-RAY AND GAMMA RAY CONSTRAINTS}}
+\item{\label{obs:xray} \textcolor{red}{ADD IN X-RAY AND GAMMA RAY CONSTRAINTS}}
 \end{enumerate}
 
+
 To explain the observation of two transient episodes in different host
-galaxy images (item 1), there are three possible
+galaxy images (observation \ref{obs:twoevents}), there are four possible
 scenarios:
 
 \begin{enumerate}[(A)]
-\item{A single physical event (e.g., a stellar explosion) that
-  appeared to us twice with an intervening time delay due to strong
-  gravitational lensing.}
-\item{Two separate events from distinct sources (e.g., two explosions
-  from unrelated stars).}
-\item{Two separate events from a single astrophysical source (e.g., a
-  recurrent nova).}
-\item{An intrinsically static source that appears transient due to time-varying magnification (e.g. a microlensing event).}
+\item{\label{case:microlensing} An intrinsically static source that
+  appears transient due to time-varying magnification (e.g. a
+  microlensing event).}
+\item{\label{case:timedelay}A single transient source (e.g., a stellar
+  explosion) that appeared to us twice with an intervening time delay
+  due to strong gravitational lensing.}
+\item{\label{case:twoexplosions} Two separate events from distinct
+  transient sources (e.g., two explosions from unrelated stars).}
+\item{\label{case:recurrent} Two separate events from a single
+  astrophysical source (e.g., a recurrent nova).}
 \end{enumerate}
 
-The very rapid rise and fall of both light curves (observation 2)
-is incompatible with any of the normal SN classes.  For both
-thermonuclear white dwarf explosions (Type Ia) and massive star core
-collapse explosions (Type Ib, Ic, and II) the optical light curve
-after reaching peak brightness is primarily powered by the decay of
-radioactive \NiFiftySix to \CoFiftySix, which leads to a minimum
-decline rate of $\sim$0.1 mag day$^{-1}$.  For Type II SNe this decay
-time can be extended into a plateau phase by the recession of the
-photosphere via a recombination wave propagint inward through the
-ionized H of the expanding outer shell.  In no case can a normal SN
-powered by the \NiFiftySix decay chain exhibit the decline rate of
-\TODO{measure the decline rate precisely} that has
-been observed for \spock.
+
+
+\noindent In the following subsections we will examine specific
+astrophysical sources that might accommodate all of these
+observations. Before that, however, we can first exclude some broad
+categories of common transients based on the timescale and peak
+luminosity.
+
+The very rapid rise and fall of both light curves (observation
+\ref{obs:timescale}) is incompatible with any of the normal SN
+classes.  For both thermonuclear white dwarf explosions (Type Ia) and
+massive star core collapse explosions (Type Ib, Ic, and II) the
+optical light curve after reaching peak brightness is primarily
+powered by the decay of radioactive \NiFiftySix to \CoFiftySix, which
+leads to a minimum decline rate of $\sim$0.1 mag day$^{-1}$.  For Type
+II SNe this decay time can be extended into a plateau phase by the
+recession of the photosphere via a recombination wave propagint inward
+through the ionized H of the expanding outer shell.  In no case can a
+normal SN powered by the \NiFiftySix decay chain exhibit the decline
+rate of \TODO{measure the decline rate precisely} that has been
+observed for \spock.
+
+The observed luminosity (observation \ref{obs:luminosity}) is far too
+high for even the most energetic stellar flares, which release a total
+energy in the range of $10^{33}$ to $10^{38}$ erg over a span of
+minutes to hours \citep{Balona:2012,Karoff:2016}.  Conversely, the
+peak luminosity is too low for most Type I or Type II SN, which peak
+at $\sim10^{42}$ to $10^{43}$ erg s$^{-1}$.  It is, however, marginally
+compatible with several categories of low luminosity transients, such
+as luminous red novae, Calcium-rich transients, and the emerging
+category of fast optical transients.
+
+\todo{Add references. And expand the
+  luminosity discussion slightly}
 
 \todo{Discuss kilonova, .Ia and Fast optical transients}
 
@@ -51,9 +75,77 @@ been observed for \spock.
   transient models}
 
 
-\subsection{A Single Explosion}
 
-Any single explosion model (Scenario A) requires that the observed
+
+
+\subsection{Microlensing}
+
+In a strong-lensing regime it is possible to generate a transient
+event from lensing effects alone (Scenario~\ref{case:microlensing}).
+In this case the background source has a steady luminosity but the
+relative motion of the source, lens and observer causes the
+magnification of that source to change rapidly with time.
+
+A commonly observed example is the microlensing of a background quasar
+by a galaxy-scale lens \citep{Wambsganss:2001, Kochanek:2004}.  In
+this optically thick microlensing regime, the lensing potential along
+the line of sight to the quasar is composed of many stellar-mass
+objects.  Each compact object along the line of sight generates a
+separate critical lensing curve, resulting in a complex web of
+overlapping critical curves. As all of these lensing stars are in
+motion relative to the background source, the web of caustics will
+shift across the source position, leading to a stochastic variability
+on timescales of months to years.  This scenario is inconsistent with
+the observed data, as the two \spock events were far too short in
+duration and did not exhibit the repeated ``flickering'' variation
+that would be expected from optically thick microlensing.
+
+A second possibility is through an isolated transient strong lensing
+event, such as a background star crossing over a lensing critical
+curve.  This corresponds to the optically thin microlensing regime,
+and is similar to the ``local'' microlensing light curves observed
+when stars within our galaxy or neighboring dwarf galaxies pass behind
+a massive compact halo object \citep{Paczynski:1986, Alcock:1993,
+  Aubourg:1993, Udalski:1993}.  In the case of a star crossing the
+caustic of a smooth lensing potential, the amplification of the source
+flux would rise (fall) with a characteristic $t^{-1/2}$ profile, and
+would exhibit a very sharp decline (increase) on the other side of the
+caustic \citep{Schneider:1986,MiraldaEscude:1991}.  With a more
+complex lens comprising many compact objects, the light curve would
+exhibit a superposition of many such sharp peaks \citep{Lewis:1993}.
+
+To generate an isolated microlensing event, the background source
+would have to be the dominant source of luminosity in its environment,
+meaning it must be a very bright O or B star with mass of order 10
+\Msun.  Depending on its age, the size of such a star would range from
+a few to a few dozen times the size of the sun.  The net relative
+transverse velocity would be on the order of a few 100 km/s, which is
+comparable to the orbital velocity of stars within a galaxy or
+galaxies within a cluster.  \citet{MiraldaEscude:1991} showed
+that---in the case of a smooth cluster potential---the timescale
+$\tau$ for the light curve of such a caustic crossing event is
+dictated by the radius of the source, $R$, and the net transverse
+velocity, $v$, of the source across the caustic, as:
+
+\begin{equation}
+  \tau = 6\frac{R}{5\,\Rsun}\frac{300 {\rm km~ s}^{-1}}{v}~\rm{hr}
+\label{eqn:caustic_crossing_time}
+\end{equation}
+
+
+\noindent Thus, the characteristic timescale of such an event would be
+on the order of hours or days, which is in the vicinity of the
+timescales observed for the \spock events.  However, this scenario
+could not plausibly generate two events with similar decay timescales
+at distinct locations on the sky. To invoke a caustic crossing for
+\spockone, the lensing critical curve would have to be coincident with
+the \spockone position, in which case the caustic could not also
+intersect the \spocktwo location.
+
+
+\subsection{Single Explosion, Time Delayed}
+
+Any single explosion model (Scenario \ref{case:timedelay}) requires that the observed
 transient events must be coincident both in space and time.  All
 lensing models evaluated here agree that spatial coincidence in the
 source plane is entirely plausible, but coincidence in time is highly
@@ -76,15 +168,16 @@ have already assumed that the lens models are unreliable. \todo{Are
   the colors viable?}
 
 
+
 \subsection{Two Separate Sources}
 
-Invoking two separate and unrelated explosions (Scenario B) would
-imply that the two events are {\it not} coincident at the source plane
-in either space or time.  This is consistent with the lens models,
-which makes this scenario initially more attractive.  However,
-removing the spatial coincidence is problematic.  All five lens models
-indicate that the locations of the two events are within \TODO{How
-  many arcsec?  how many pc?}.
+Invoking two separate and unrelated explosions (Scenario
+\ref{case:twoexplosions}) would imply that the two events are {\it
+  not} coincident at the source plane in either space or time.  This
+is consistent with the lens models, which makes this scenario
+initially more attractive.  However, removing the spatial coincidence
+is problematic.  All five lens models indicate that the locations of
+the two events are within \TODO{How many arcsec?  how many pc?}.
 
 \TODO{Evaluate the SED of this host galaxy pixel by pixel to determine
   whether the spock locations are consistent with being the same
@@ -113,15 +206,16 @@ light curves.
 
 \subsection{Two Events from the Same Source}
 
-The final option is to allow for two separate explosive events powered
-by the same astrophysical source (Scenario C).  In this case the
-observed events must be spatially coincident but not coincident in
-time, which is fully consistent with all lens model constraints. The
-two \spock events would each have been repeated (either before or
-after we observed it) at the other position due to the gravitational
-lensing time delay.  This hypothesis supposes that those
-``gravitational echoes'' were simply missed, as they landed in one of
-the long periods without HST observations on this field.
+An alternative is to allow two separate explosive events powered by
+the same astrophysical source (Scenario \ref{case:recurrent}).  In
+this case the observed events must be spatially coincident but not
+coincident in time, which is fully consistent with all lens model
+constraints. The two \spock events would each have been repeated
+(either before or after we observed it) at the other position due to
+the gravitational lensing time delay.  This hypothesis supposes that
+those ``gravitational echoes'' were simply not observed, as they
+landed in one of the long periods without HST observations on this
+field.
 
 Adopting this hypothesis immediately rules out any catastrophic
 explosive events---such as a supernova or neutron star merger---in
@@ -131,8 +225,8 @@ sources (e.g. Cepheids, RR Lyrae, or Mira variables) that exhibit
 periodic changes in flux due to pulsations of the stellar photosphere
 but do not have sharp, isolated transient episodes.
 
-There are two broad categories of astrophysical sources that can show
-recurrent explosive events that would fit this scenario.  The first is
+There are two broad categories of astrophysical sources with
+recurrent explosive events that might fit this scenario.  The first is
 active galactic nuclei (AGN), in which transient episodes can be
 driven by clumps of matter falling onto the accretion disk of a
 supermassive black hole.  The second is a recurrent stellar explosion,
@@ -165,4 +259,10 @@ color for both \spockone and \spocktwo is in the range
 galaxy in image 11.3 has $U-B=0.35\pm0.15$. Although by no means
 definitive, this suggests that the \spock events were not located at
 the physical center of the host galaxy.
+
+\todo{Discuss recurrent novae}
+
+\todo{Discuss LBV eruptions}
+
+
 
