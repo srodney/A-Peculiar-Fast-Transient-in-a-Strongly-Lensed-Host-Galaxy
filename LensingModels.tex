@@ -5,7 +5,8 @@ events, we use \textcolor{red}{five} cluster mass models to provide
 estimates of the magnification and time delays from gravitational
 lensing.  We identify each by the last name of the principal
 investigator of the development team:
-\textcolor{red}{NOTE: THESE DESCRIPTIONS ARE PROBABLY INCORRECT.  MODELERS, PLEASE FIX AS NEEDED.}
+\textcolor{red}{NOTE: THESE DESCRIPTIONS ARE PROBABLY INCORRECT.
+  MODELERS, PLEASE FIX AS NEEDED.}
 
 
 \bigskip
@@ -15,20 +16,26 @@ investigator of the development team:
   member galaxies (Note: no weak-lensing constraints used for this
   MACS J0416 model). Interactive online model exploration available at
   \url{http://www.ifca.unican.es/users/jdiego/LensExplorer}.
-\item{{\it Jauzac:} The model of \citet{Jauzac:2014}, generated with the {\tt LENSTOOL} software
+\item{{\it Jauzac:} The model of \citet{Jauzac:2014}, generated with
+  the {\tt LENSTOOL} software
   \citep{Jullo:2007},\footnote{\url{http://projects.lam.fr/repos/lenstool/wiki}}}
   using strong- and weak-lensing constraints.  This model makes a
   light-traces-mass assumption and parameterizes cluster components
   using Navarro-Frenk-White (NFW) density profiles
   \citep{Navarro:1997}.
-\item{\it Oguri:} The model of \citet{Kawamata:2015}, built using the {\tt GLAFIC} software\footnote{\url{http://www.slac.stanford.edu/~oguri/glafic/}} with strong-lensing constraints.
+\item{\it Oguri:} The model of \citet{Kawamata:2015}, built using the
+  {\tt GLAFIC}
+  software\footnote{\url{http://www.slac.stanford.edu/~oguri/glafic/}}
+  with strong-lensing constraints.
 \item{{\it Williams:} An adaptive grid model developed using the {\tt
     GRALE} software tool
   \citep{Liesenborgs:2006,Liesenborgs:2007,Mohammed:2014}, which uses
   a genetic algorithm to reconstruct the cluster mass profile with an
   arrangement of projected Plummer \citeyear{Plummer:1911} density
   profiles.}
-\item{{\it Zitrin:} A model with strong- and weak-lensing constraints, built using the PIEMD+eNFW parameterization for density profiles as in \citet{Zitrin:2009a}.}
+\item{{\it Zitrin:} A model with strong- and weak-lensing constraints,
+  built using the PIEMD+eNFW parameterization for density profiles as
+  in \citet{Zitrin:2009a}.}
 \end{itemize}
 \bigskip    
 
@@ -46,35 +53,88 @@ the lens modelers made use of strong-lensing constraints
 as part of the CLASH program (PI:Postman, HST PID:12459,
 \citealt{Postman:2012}). These models also made use of spectroscopic
 redshifts in the cluster field from \citet{Mann:2012},
-\citet{Christensen:2012}, and \citet{Grillo:2015a}.  Input weak-lensing
-constraints also made use of data collected at the Subaru Telescope by
-PI K. Umetsu (in prep) and archival imaging.
+\citet{Christensen:2012}, and \citet{Grillo:2015a}.  Input
+weak-lensing constraints also made use of data collected at the Subaru
+Telescope by PI K. Umetsu (in prep) and archival imaging.
+\citet{Priewe:2016} provides a more complete description of the
+methodology of each model and a comparison of the magnification
+predictions and uncertainties across the entire \macs0416 field.
 
-These models provide estimates for the absolute magnifications due to gravitational lensing from the \macs0416\ cluster, reported in Table~\ref{tab:LensModelPredictions}.  Although the models generally agree on median magnification values in the range 20-40 for both events, the uncertainties on these magnifications are very large, due primarily to the close proximity of the \spock\ events to the lensing critical curve for sources at $z=1$ \textcolor{red}{A GOOD CITATION FOR THIS GENERAL TRAIT OF MODEL UNCERTAINTY INCREASING NEAR CRITICAL CURVES?}.  Note that the magnifications for \spockone\ and \spocktwo\ are highly correlated.  A variation of a given lens model that moves the critical curve closer to the position of \spockone\ would drive the magnification of that event much higher (toward $\mu_1\sim60$), but that would also have the effect of moving the critical curve farther from \spocktwo\, which would necessarily drive its magnification downward (toward $\mu_2\sim10$). 
+These models provide estimates for the absolute magnifications due to
+gravitational lensing from the \macs0416\ cluster, reported in
+Table~\ref{tab:LensModelPredictions}.  Although the models generally
+agree on median magnification values in the range 20-40 for both
+events, the uncertainties on these magnifications are very large, due
+primarily to the close proximity of the \spock\ events to the lensing
+critical curve for sources at $z=1$ \textcolor{red}{A GOOD CITATION
+  FOR THIS GENERAL TRAIT OF MODEL UNCERTAINTY INCREASING NEAR CRITICAL
+  CURVES?}.  Note that the magnifications for \spockone\ and
+\spocktwo\ are highly correlated.  A variation of a given lens model
+that moves the critical curve closer to the position of
+\spockone\ would drive the magnification of that event much higher
+(toward $\mu_1\sim60$), but that would also have the effect of moving
+the critical curve farther from \spocktwo\, which would necessarily
+drive its magnification downward (toward $\mu_2\sim10$).
 
 %\renewcommand{\arraystretch}{1.5}
 \begin{deluxetable}{lccccc}\label{tab:LensModelPredictions}
-\tablewidth{\linewidth}
-  \tablecolumns{6}
-\tablecaption{Lens model predictions for time delays and magnifications\label{tab:LensModelPredictions}}
-\tablehead{ 
-    \colhead{Model} & \colhead{$\Delta t_{11.1}$} & \colhead{$\Delta t_{11.3}$} & \colhead{$\mu_1$} & \colhead{$\mu_2$} & \colhead{$\mu_3$}\\
-    \colhead{} & \colhead{(days)} & \colhead{(years)} & \colhead{} & \colhead{} & \colhead{}
-} 
-\startdata
-Diego      & -48$\pm$10 &   0.8     &  35$\pm$20  &  30$\pm$20 & \\[0.5em]
-Jauzac     &  23$\pm$10 &   3.3     &  & \\[0.5em]
-Oguri      & -4$^{+3}_{-6}$ & -4.9$^{+0.5}_{-0.6}$ &  29$^{+44}_{-11}$  & 84$^{+104}_{-38}$ & \\[0.5em]
-Williams   & -22$\pm$10 &  -4.7     &  28$^{+82}_{-15}$  &  20$^{+41}_{-13}$ & \\[0.5em]
-Zitrin     & -20$\pm$10 &  10$\pm$4 &  & \\
-\enddata
-\tablecomments{Time delays give the predicted delay relative to an appearance in host image 11.2.}
+\tablewidth{\linewidth} \tablecolumns{6} \tablecaption{Lens model
+  predictions for time delays and
+  magnifications\label{tab:LensModelPredictions}} \tablehead{
+  \colhead{Model} & \colhead{$\Delta t_{11.1}$} & \colhead{$\Delta
+    t_{11.3}$} & \colhead{$\mu_1$} & \colhead{$\mu_2$} &
+  \colhead{$\mu_3$}\\ \colhead{} & \colhead{(days)} &
+  \colhead{(years)} & \colhead{} & \colhead{} & \colhead{} }
+\startdata Diego & -48$\pm$10 & 0.8 & 35$\pm$20 & 30$\pm$20 &
+\\[0.5em] Jauzac & 23$\pm$10 & 3.3 & & \\[0.5em] Oguri &
+-4$^{+3}_{-6}$ & -4.9$^{+0.5}_{-0.6}$ & 29$^{+44}_{-11}$ &
+84$^{+104}_{-38}$ & \\[0.5em] Williams & -22$\pm$10 & -4.7 &
+28$^{+82}_{-15}$ & 20$^{+41}_{-13}$ & \\[0.5em] Zitrin & -20$\pm$10 &
+10$\pm$4 & & \\ \enddata \tablecomments{Time delays give the predicted
+  delay relative to an appearance in host image 11.2.}
 \end{deluxetable}
 %\renewcommand{\arraystretch}{1.}
 
-From each model we also extract two time delay predictions, given in Table~\ref{tab:LensModelPredictions}.  We report all time delays relative to the \spockone\ event, which appeared in January 2014 in host image 11.2.  That same transient episode would have appeared at different times in host galaxy images 11.1 and 11.3, due primarily to the \citet{Shapiro:1964} delay. 
-The $\Delta t_{11.1}$ column in Table~\ref{tab:LensModelPredictions} gives the model predictions for 
-the "\spockone-11.1" delay: the number of days between the appearance of the \spockone\ event and the date when it should have been observable in the adjacent host image 11.1.  The opposite value would give the "\spocktwo-11.2 delay": the time difference between the August 2014 \spocktwo\ event and its expected appearance in host image 11.2.  Table~\ref{tab:LensModelPredictions} also reports the predicted time delay between host image 11.2 and the more widely separated host image 11.3.  Although the models disagree on the arrival sequence, they are consistent in predicting that the {\it magnitude} of the time delay between 11.2 and 11.1 is on the order of 10's of days, while the delay from 11.2 to 11.3 is on the order of 1-10 years.  
+From each model we also extract two time delay predictions, given in
+Table~\ref{tab:LensModelPredictions}.  We report all time delays
+relative to the \spockone\ event, which appeared in January 2014 in
+host image 11.2.  That same transient episode would have appeared at
+different times in host galaxy images 11.1 and 11.3, due primarily to
+the \citet{Shapiro:1964} delay.  The $\Delta t_{11.1}$ column in
+Table~\ref{tab:LensModelPredictions} gives the model predictions for
+the number of days between the appearance of the \spockone\ event and
+the date when it should have been observable in the adjacent host
+image 11.1.  The opposite value would the time difference between the
+August 2014 \spocktwo\ event and its expected appearance in host image
+11.2.  Table~\ref{tab:LensModelPredictions} also reports the predicted
+time delay between host image 11.2 and the more widely separated host
+image 11.3.  Although the models disagree on the arrival sequence,
+they are consistent in predicting that the {\it magnitude} of the time
+delay between 11.2 and 11.1 is on the order of 10's of days, while the
+delay from 11.2 to 11.3 is on the order of 1-10 years.
 
-If the two observed transient events are actually two images of the same physical episode, appearing separately only because of gravitational lensing, then the model predictions for this time delay should be consistent with the observed 8 month separation between the January and August 2014 appearances.  In fact, we find that none of the lensing models predict an 8 month time delay between appearances in image 11.1 and 11.2.  This is represented in Figure~\ref{fig:SpockDelayPredictions}, where we have plotted the two transient events, along with shaded bars demarcating the time delay predictions of all models.   The models are broadly consistent with each other, predicting that the lensing time delay between images 11.1 and 11.2 is on the order of $\pm$50 days, far short of the 238 day lag that we observed between \spockone\ and \spocktwo.  From this we conclude that the two observed events are not gravitational echoes of a single explosive transient episode, but instead must have originated as two distinct physical events in the source plane.  We are left then with two possible scenarios: (a) the two events are not physically associated, in which case they may each be the result of a separate catastrophic explosion like a supernova or kilonova that would leave the progenitor system completely disrupted; or (b) the two events originated from the same astrophysical system, which must therefore be a source of recurrent explosive transient episodes.   We evaluate physical systems that could match these two scenarios in the following sections.
+If the two observed transient events are actually two images of the
+same physical episode, appearing separately only because of
+gravitational lensing, then the model predictions for this time delay
+should be consistent with the observed 8 month separation between the
+January and August 2014 appearances.  In fact, we find that none of
+the lensing models predict an 8 month time delay between appearances
+in image 11.1 and 11.2.  This is represented in
+Figure~\ref{fig:SpockDelayPredictions}, where we have plotted the two
+transient events, along with shaded bars demarcating the time delay
+predictions of all models.  The models are broadly consistent with
+each other, predicting that the lensing time delay between images 11.1
+and 11.2 is on the order of $\pm$50 days, far short of the 238 day lag
+that we observed between \spockone\ and \spocktwo.  From this we
+conclude that the two observed events are not gravitational echoes of
+a single explosive transient episode, but instead must have originated
+as two distinct physical events in the source plane.  We are left then
+with two possible scenarios: (a) the two events are not physically
+associated, in which case they may each be the result of a separate
+catastrophic explosion like a supernova or kilonova that would leave
+the progenitor system completely disrupted; or (b) the two events
+originated from the same astrophysical system, which must therefore be
+a source of recurrent explosive transient episodes.  We evaluate
+physical systems that could match these two scenarios in the following
+sections.
 
