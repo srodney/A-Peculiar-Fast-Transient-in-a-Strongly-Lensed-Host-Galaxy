@@ -6,4 +6,51 @@ to peak luminosity and fades back to quiescence in only $\sim$7 days,
 and the August event, \spocktwo, rises and falls in $<20$ days.
   
   
-  
+Due to the rapid decline timescale, no observations were collected for
+either event that unambiguously show the declining portion of the
+light curve. Therefore, we must make some assumption for the shape of
+the light curve in order to quantify the peak luminosity and the
+corresponding timescales for the rise and the decline.  We first
+approach this with a simplistic model that is piece-wise linear in
+magnitude vs time.  Figure~\ref{fig:LinearLightCurveFits} shows
+examples of the resulting fits for the two events.  For each fit we
+use only the data collected within 3 days of the brightest observed
+magnitude, which allows us to fit a linear rise separately for the
+F606W and F814W light curves for \spockone and the F125W and F160W
+light curves for \spocktwo. To quantify the covariance between the
+true peak brightness, the rise time and the decline timescale, we use
+the following procedure:
+
+\begin{enumerate}
+\item make an assumption for the date of peak, $t_{\rm pk}$;
+\item measure the peak magnitude at $t_{\rm pk}$ from the linear fit
+  to the rising light curve data;
+\item assume the source reaches a minimum brightness (maximum
+  magnitude) of 30 AB mag at the epoch of first observation after the
+  peak;
+\item draw a line for the declining light curve between the assumed
+  peak and the assumed minimum brightness;
+\item use that declining light curve line to measure the timescale for
+  the event to drop by 3 magnitudes, $t_3$;
+\item make a new assumption for $t_{\rm pk}$ and repeat.
+\end{enumerate}
+
+As shown in Figure~\ref{fig:LinearLightCurveFits}, the resulting
+piece-wise linear fits are simplistic, but nevertheless approximately
+capture the observed behavior for both events.  Furthermore, since
+this toy model is not physically motivated, it allows us to remain
+agnostic for the time being as to the astrophysical source(s) driving
+these transients.  From these fits we can see that \spockone most
+likely reached a peak magnitude between 25 and 26.5 AB mag in both
+F814W and F435W, and had a decline timescale $t_3$ of less than 2 days
+in the rest-frame. The observations of \spocktwo provide less
+stringent constraints, but we see that it had a peak magnitude between
+23 and 26.5 AB mag in F160W and exhibited a decline time of less than
+seven days.  These fits also illustrate the generic fact that a higher
+peak brightness corresponds to a longer rise time and a faster decline
+timescale, independent of the specific model used.  These results are
+not substantially affected by changes to the arbitrary constraints we
+placed on these linear fits, such as the maximum post-peak magnitude
+or the number of pre-peak data points used for the rising light curve
+fits.
+
