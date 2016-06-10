@@ -4,6 +4,7 @@ figures/detection_image/detection_image.png
 Observations.tex
 LightCurves.tex
 figures/spock_lightcurves/spock_lightcurves.png
+figures/light_curve_linear_fits/light_curve_linear_fits.png
 LensingModels.tex
 figures/spock_predictions/spock_predictions.png
 figures/grale_td_histogram/grale_td_histogram.png
