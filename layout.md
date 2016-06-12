@@ -7,6 +7,7 @@ figures/light_curve_linear_fits/light_curve_linear_fits.png
 LightCurves.tex
 LensingModels.tex
 figures/spock_predictions/spock_predictions.png
+figures/composite_lens_model_contours/composite_lens_model_contours.png
 figures/grale_td_histogram/grale_td_histogram.png
 AstrophysicalModels.tex
 Acknowledgments.tex
