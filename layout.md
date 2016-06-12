@@ -2,7 +2,7 @@ Abstract.tex
 Introduction.tex
 figures/detection_image/detection_image.png
 Observations.tex
-figures/spock_lightcurves/spock_lightcurves.png
+figures/spock_lightcurves/spock_lightcurves_flux.png
 figures/light_curve_linear_fits/light_curve_linear_fits.png
 LightCurves.tex
 LensingModels.tex
