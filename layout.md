@@ -6,8 +6,8 @@ figures/spock_lightcurves/spock_lightcurves_flux.png
 figures/light_curve_linear_fits/light_curve_linear_fits.png
 LightCurves.tex
 LensingModels.tex
-figures/spock_predictions/spock_predictions.png
 figures/composite_lens_model_contours/composite_lens_model_contours.png
+figures/spock_predictions/spock_predictions.png
 AstrophysicalModels.tex
 Acknowledgments.tex
 
