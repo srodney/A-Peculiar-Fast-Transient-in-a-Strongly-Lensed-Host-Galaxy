@@ -8,6 +8,7 @@ LightCurves.tex
 LensingModels.tex
 figures/composite_lens_model_contours/composite_lens_model_contours.png
 figures/spock_predictions/spock_predictions.png
+figures/peakluminosity_vs_declinetime/peakluminosity_vs_declinetime.png
 AstrophysicalModels.tex
 Acknowledgments.tex
 
