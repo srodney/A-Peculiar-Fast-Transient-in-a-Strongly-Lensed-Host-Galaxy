@@ -5,8 +5,8 @@ Observations.tex
 figures/spock_lightcurves/spock_lightcurves_flux.png
 figures/light_curve_linear_fits/light_curve_linear_fits.png
 LightCurves.tex
-Host Environment.tex
-figures/spock_maps/spock_hostgalaxy_properties.png
+HostGalaxy.tex
+figures/spock_hostgalaxy_properties/spock_hostgalaxy_properties.png
 LensingModels.tex
 figures/composite_lens_model_contours/composite_lens_model_contours.png
 figures/spock_predictions/spock_predictions.png
