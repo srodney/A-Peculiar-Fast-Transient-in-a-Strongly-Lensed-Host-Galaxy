@@ -1,7 +1,5 @@
-Abstract.tex
-Introduction.tex
-figures/detection_image/detection_image.png
-Observations.tex
+Abstract.tex Introduction.tex
+figures/detection_image/detection_image.png Observations.tex
 figures/spock_lightcurves/spock_lightcurves_flux.png
 figures/light_curve_linear_fits/light_curve_linear_fits.png
 LightCurves.tex
@@ -13,6 +11,7 @@ figures/composite_lens_model_contours/composite_lens_model_contours.png
 figures/peakluminosity_vs_declinetime/peakluminosity_vs_declinetime.png
 AstrophysicalModels.tex
 figures/spock_predictions/spock_predictions.png
+figures/recurrent_nova_lightcurve_comparison/recurrent_nova_lightcurve_comparison.png
 Acknowledgments.tex
 
   
