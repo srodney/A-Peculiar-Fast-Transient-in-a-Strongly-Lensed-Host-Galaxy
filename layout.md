@@ -5,6 +5,7 @@ Observations.tex
 figures/spock_lightcurves/spock_lightcurves_flux.png
 figures/light_curve_linear_fits/light_curve_linear_fits.png
 LightCurves.tex
+figures/spock_colorcurves_observerframe/spock_colorcurves_observerframe.png
 HostGalaxy.tex
 figures/spock_hostgalaxy_properties/spock_hostgalaxy_properties.png
 LensingModels.tex
