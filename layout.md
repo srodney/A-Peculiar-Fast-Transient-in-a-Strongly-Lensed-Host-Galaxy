@@ -10,6 +10,7 @@ HostGalaxy.tex
 figures/spock_hostgalaxy_properties/spock_hostgalaxy_properties.png
 LensingModels.tex
 figures/composite_lens_model_contours/composite_lens_model_contours.png
+figures/peakluminosity_vs_declinetime_wide/peakluminosity_vs_declinetime_wide.png
 figures/peakluminosity_vs_declinetime/peakluminosity_vs_declinetime.png
 figures/spock_predictions/spock_predictions.png
 RecurrentNovaModel.tex
