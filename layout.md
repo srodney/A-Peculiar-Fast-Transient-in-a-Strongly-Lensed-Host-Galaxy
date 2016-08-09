@@ -8,6 +8,7 @@ LightCurves.tex
 figures/spock_colorcurves_observerframe/spock_colorcurves_observerframe.png
 HostGalaxy.tex
 figures/spock_hostgalaxy_properties/spock_hostgalaxy_properties.png
+figures/muse_oii_sequence/muse_oii_sequence.png
 LensingModels.tex
 figures/composite_lens_model_contours/composite_lens_model_contours.png
 figures/peakluminosity_vs_declinetime_wide/peakluminosity_vs_declinetime_wide.png
