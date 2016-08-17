@@ -1,56 +1,135 @@
 \section{Discussion}
 \label{sec:Discussion}
 
-\todo{
-the models that come closest to matching the observed characteristics
-of the two \spock events are the kilonova model and the recurrent nova
-model}
+We have found that the \spock transient events are phenomenologically
+most consistent with RNe and LBVs.  Let us now consider
+the astrophysical implications of these two possible classifications.
 
+The physical limits of the RN model are best evaluated by combining
+the two key observables of recurrence period and peak brightness. In
+this examination we rely on a pair of papers that evaluated an
+extensive grid of nova models through multiple cycles of outburst and
+quiescence \citep{Prialnik:1995,Yaron:2005}.
+Figure~\ref{fig:RecurrentNovaRecurrenceComparison} plots first the RN
+outburst amplitude (the apparent magnitude between outbursts minus the
+apparent magnitude at peak) and then the peak luminosity against the
+log of the recurrence period in years.
+% The observations for \spock 
+% are shown in comparison to observed RNe (crosses) and theoretical
+% models (circles) from \citet{Yaron:2005}.
+For the \spock events we can only measure a lower limit on the
+outburst amplitude, since the presumed progenitor star is unresolved,
+so no measurement is available at
+quiescence. Figure~\ref{fig:RecurrentNovaRecurrenceComparison} shows
+that a recurrence period as fast as one year is expected only for a RN
+system in which the primary WD is both very close to the Chandrasekhar
+mass limit (1.4 \Msun) and also has an extraordinarily rapid mass
+transfer rate ($\sim10^{-6}$ \Msun yr$^{-1}$).  The models of
+\citet{Yaron:2005} suggest that such systems should have a very low
+peak amplitude (barely consistent with the lower limit for \spock) and
+a low peak luminosity ($\sim$100 times less luminous than the \spock
+events).  Thus, if the \spock transients are in fact two outbursts
+from a single RN system, then that progenitor system would be the most
+extreme WD binary yet known.
 
-If we accept for the moment that the source of the \spock transient
-events is a physically extreme nova system, then we find a significant
-problem with the nova
+For the LBV scenario, the observed \spock events would also stand out
+as quite extreme.  The observed rise and decline times for \spock
+would place both among the most rapid LBV major eruptions ever seen.
+The peak luminosities of both \spockone and \spocktwo are similar to
+the observed luminosities of rapid, bright outbursts seen in LBVs such
+as SN 2009ip and NGC3432-LBV1. However, the upper edge of the range of
+plausible peak luminosities for both \spock events reaches $10^{42}$
+erg s$^{-1}$, which would be an order of magnitude more luminous than
+any rapid outburst from those two nearby LBVs.
 
-The most luminous novae observed in the local
-universe were all somewhat slower in their decline rate.
+The precise physical mechanism for LBV outbursts is still not fully
+understood.  LBV stars such as \etacar show clear evidence of ejected
+shells of gas, and very massive stars are known to undergo extensive
+mass loss as they evolve toward eventual explosion as a SN.  This has
+led to the canonical model of LBV transient events as being the
+optical signature of an eruptive mass loss episode.  Such mass loss
+could arise from a variety of direct mechanisms, such as
+continuum-driven super-Eddingtion winds \citep{Smith:2006},
+pulsational pair instability ejections \citep{Woosley:2007}, and shock
+heating of stellar envelopes from internal shell-burning instabilities
+\citep{Dessart:2010}.  This is far from an exhaustive list, and none
+of these explanations are entirely sufficient to account for all of
+the observed diversity of LBV behaviors or the structural complexity
+the most well-studied LBVs \citep[e.g.][]{Smith:2011b, Kochanek:2012}.
 
-SN 2010U has t2 = 3.5 ± 0.3 days and the rise time is unconstrained.
+Although we do not have a complete physical model in hand, we can
+nevertheless explore some of the physical implications of an LBV
+classification for the two \spock events.  We first make a rough
+estimate of the total radiated energy, which can be computed using the
+decline timescale $t_2$ and the peak luminosity $L_{\rm pk}$ following
+\citet{Smith:2011b}:
 
-t2 = 6 ± 1 days (L91; Schwarz et al. 2001) and t2 = 9.5 days (M31N; Shafter et al. 2009). By comparison, 
+\begin{equation}
+  \label{eqn:Erad}
+  E_{\rm rad} = \xi \t2 \Lpk,
+\end{equation}
 
-L91 (Della Valle 1991; Schwarz et al. 2001; Williams et al. 1994) and M31N-2007-11d (Shafter et al. 2009)
+\noindent where $\xi$ is a factor of order unity that depends on the
+precise shape of the light curve.\footnote{Note that
+  \citet{Smith:2011b} used $t_{1.5}$ instead of $t_2$, which is
+  amounts to a different light curve shape term, $\xi$.}  Adopting
+\Lpk$\sim10^{41}$ erg s$^{-1}$ and \t2$\sim$2 days (as shown in
+Figure~\ref{fig:PeakLuminosityDeclineTime}), we find that the total
+radiated energy isi $E_{\rm rad}\sim10^{46}$ erg.  A realistic range
+for this estimate would span $10^{44}<E_{\rm rad}<10^{47}$ erg, due to
+uncertainties in the magnification, bolometric luminosity correction,
+decline time, and light curve shape (in roughly that order of
+importance). These uncertainties notwithstanding, our crude estimate
+does fall well within the range of plausible values for the total
+radiated energy of a major LBV outburst.
 
-The preferred peak luminosity of
-$10^{41}$ erg s$^{-1}$ that we have inferred for \spock would imply
-that this is among the most luminous novae ever observed.
+If LBV eruptions are driven by significant mass ejection events, then
+the energy budget would also include a substantial amount of kinetic
+energy imparted to the ejected gas shell. Without spectroscopic
+information from the \spock transients we can not place any realistic
+estimate on the kinetic energy. Nevertheless, we can take the radiated
+energy as a rough lower limit on the total energy release and ask what
+timescale would be required for a massive star to build up that amount
+of energy. This approach assumes that the energy released in an LBV
+eruption is generated slowly in the stellar interior and is in some
+way ``bottled up'' by the stellar envelope over months or years,
+before being released in a rapid mass ejection.  The ``build-up'' timescale to match the radiative energy release is then
 
+\begin{equation}
+  \label{eqn:trad}
+t_{\rm rad} = \frac{E_{\rm rad}}{L_{\rm qui}} = \t2 \frac{\xi\Lpk}{L_{\rm qui}},
+\end{equation}
 
+\noindent where $L_{\rm qui}$ is the luminosity of the LBV progenitor
+star during quiescence. For the \spock events we have no useful
+constraint on the quiescent luminosity, but for evaluating the LBV
+scenario we can assume it is similar to the local LBVs whose
+progenitors have been directly observed.  This gives a range for the
+radiative build-up timescale between $t_{\rm rad}\sim30$ days if the
+progenitor is \etacar-like ($M_V\sim-12$), or $t_{\rm rad}\sim20$
+years if it is similar to the faintest known LBV progenitors (e.g. SN
+2010dn, with $M_V\sim-6$).  
 
-extremely luminous novae \citep{Czekala:2013}
-was an Fe II nova, inconsistent with the usual picture of He/N novae as the brightest with the most massive WDs.
+A more informative alternative approach is to assert that the build-up
+timescale for \spock corresponds to the observed rest-frame lag
+between the two events, roughly 120 days. Adopting $\Lpk=10^{41}$ erg
+s$^{-1}$ and $\t2=2$ days, if we assume $t_{\rm rad}=120$ days we can
+infer that the quiescent luminosity of the \spock progenitor would be
+$L_{\rm qui}\sim10^{39.5}$ erg s${-1}$ ($M_V\sim-10$).  This is a very
+reasonable quiescent luminosity value for the massive ($M>10\Msun$)
+progenitor stars expected for LBVs.
 
-Two other luminous Fe ii type novae have been studied extensively: , hereafter M31N.
-
-The rise to maximum of L91 is among the longest for novae on record, with a peak of Mv = −10.0 mag. The light curve of L91 shown here is drawn from the photometry published in the circulars (Shore et al. 1991; Gilmore 1991; Gilmore et al. 1991; Liller et al. 1991; Della Valle et al. 1991). Shafter et al. (2009) set a lower limit of four days on the rise time for M31N from quiescence to a maximum light of MV ≃ −9.5 mag.
-
-Both novae declined rapidly from maximum light with 
-
-
-
-Furthermore, the spectroscopic classification
-of Novae is also correlated with their luminosity and light curve
-decline time: those showing prominent He/N features are brighter and
-fade faster than those with spectra dominated by Fe II lines.
-
-
-Shafter et al 2011:
-
-``more luminous novae generally fade the fastest and [...]  He/N novae
-are typically faster and brighter than their Fe II counterparts. In
-addition, we find a weak dependence of nova speed class on position in
-M31, with the spatial distribution of the fastest novae being slightly
-more extended than that of slower novae.''
-
-
-Recurrent novae make up roughly 25\% of the nova population,
-masquerading as CNe \citep{Pagnotta:2014}.
+%To examine the temperature and total energy output, we first make a
+%set of (admittedly unfounded) assumptions: (1) the two outbursts had a
+%very similar SED; (2) the last observed epoch for each event
+%corresponds to the same phase relative to the true epoch of peak
+%brightness; and (3) the lensing magnifications for the two events are
+%the same.  These simplifying assumptions allow us to jointly apply the
+%optical observations of \spockone and the NIR observations of
+%\spocktwo as constraints on the SED in any given epoch.  We then set
+%an assumption for the epoch of peak brightness, make another
+%assumption for the magnification of both events, and then fit a
+%blackbody to the resulting extrapolated SED. From this blackbody fit
+%we derive a temperature and integrate to get an estimate of the
+%pseudo-bolometric luminosity.  The resulting inferred physical
+%parameters are plotted in Figure~\ref{fig:DerivedPhysicalParameters}.
