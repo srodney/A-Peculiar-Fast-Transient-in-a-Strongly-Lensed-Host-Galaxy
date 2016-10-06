@@ -18,7 +18,6 @@ figures/recurrent_nova_lightcurve_comparison/recurrent_nova_lightcurve_compariso
 figures/lbv_lightcurve_comparison/lbv_lightcurve_comparison.png
 Classification.tex
 figures/recurrent_nova_recurrence_comparison/recurrent_nova_recurrence_comparison.png
-Discussion.tex
 Conclusions.tex
 Acknowledgments.tex
 
