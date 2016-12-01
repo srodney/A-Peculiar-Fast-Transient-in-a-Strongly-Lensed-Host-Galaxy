@@ -1,24 +1,27 @@
 Abstract.tex
 Introduction.tex
 figures/detection_image/detection_image.png
-Observations.tex
 figures/spock_lightcurves/spock_lightcurves_flux.png
-figures/light_curve_linear_fits/light_curve_linear_fits.png
+Results.tex
+figures/peakluminosity_vs_declinetime/peakluminosity_vs_declinetime.png
+Discussion.tex
+Acknowledgments.tex
+
+
+Methods.tex
+Observations.tex
 LightCurves.tex
+figures/light_curve_linear_fits/light_curve_linear_fits.png
 figures/spock_colorcurves_observerframe/spock_colorcurves_observerframe.png
 HostGalaxy.tex
 figures/spock_hostgalaxy_properties/spock_hostgalaxy_properties.png
 figures/muse_oii_sequence/muse_oii_sequence.png
 LensingModels.tex
-figures/composite_lens_model_contours/composite_lens_model_contours.png
-figures/peakluminosity_vs_declinetime_wide/peakluminosity_vs_declinetime_wide.png
-figures/peakluminosity_vs_declinetime/peakluminosity_vs_declinetime.png
 figures/spock_predictions/spock_predictions.png
+Classification.tex
+figures/composite_lens_model_contours/composite_lens_model_contours.png
 figures/recurrent_nova_lightcurve_comparison/recurrent_nova_lightcurve_comparison.png
 figures/lbv_lightcurve_comparison/lbv_lightcurve_comparison.png
-Classification.tex
 figures/recurrent_nova_recurrence_comparison/recurrent_nova_recurrence_comparison.png
-Conclusions.tex
-Acknowledgments.tex
 
   
