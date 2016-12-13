@@ -1,6 +1,5 @@
-\section{Light Curves}\label{sec:LightCurves}
-  
-  
+\subsection{Light Curve Fitting}\label{sec:LightCurves}
+
 Due to the rapid decline timescale, no observations were collected for
 either event that unambiguously show the declining portion of the
 light curve. Therefore, we must make some assumption for the shape of
@@ -26,7 +25,7 @@ the following procedure:
 \item draw a line for the declining light curve between the assumed
   peak and the assumed minimum brightness;
 \item use that declining light curve line to measure the timescale for
-  the event to drop by 3 magnitudes, $t_3$;
+  the event to drop by 2 magnitudes, $t_2$;
 \item make a new assumption for $t_{\rm pk}$ and repeat.
 \end{enumerate}
 
@@ -37,7 +36,7 @@ this toy model is not physically motivated, it allows us to remain
 agnostic for the time being as to the astrophysical source(s) driving
 these transients.  From these fits we can see that \spockone most
 likely reached a peak magnitude between 25 and 26.5 AB mag in both
-F814W and F435W, and had a decline timescale $t_3$ of less than 2 days
+F814W and F435W, and had a decline timescale $t_2$ of less than 2 days
 in the rest-frame. The observations of \spocktwo provide less
 stringent constraints, but we see that it had a peak magnitude between
 23 and 26.5 AB mag in F160W and exhibited a decline time of less than
@@ -50,14 +49,23 @@ between peak brightness and decline time is not strongly affected by
 adjusting the assumed maximum post-peak magnitude or changing the
 number of pre-peak data points used for the rising light curve fits.
 
-%With measurements of the key observational parameters of the \spock
-%light curves now in hand, we would like to compare these to the
-%characteristics of known astrophysical transients.  We must first,
-%however, introduce a correction for the lensing magnification, and
-%evaluate whether or how these sources might be spatially or temporally
-%related in the source plane.
+At any assumed value for the time of peak brightness this linear
+interpolation gives an estimate of the peak magnitude. We then convert
+that to a luminosity (e.g., $\nu L_\nu$ in erg s$^{-1}$) by first
+correcting for the luminosity distance assuming a standard \LCDM
+cosmology, and then accounting for an assumed lensing magnification,
+$\mu$.  The range of plausible lensing magnifications ($10<\mu<100$)
+is derived from the union of our six independent lens models (Methods,
+Figure~\ref{fig:LensModelContours}).  This results in a grid of
+possible peak luminosities for each event as a function of
+magnification and time of peak.  As we are using linear light curve
+fits, the assumed time of peak is equivalent to an assumption for the
+decline time, which we quantify as $t_2$, the time over which the
+transient declines by 2 magnitudes.
 
-\subsection{Color Curves}
+
+
+\subsection{Color Curves}\label{sec:ColorCurves}
 
 At redshift $z=1$ the observed optical and infrared bands translate to
 rest-frame ultraviolet (UV) and optical wavelengths, respectively.  To
@@ -75,4 +83,3 @@ transformation from AB to Vega-based magnitudes.  The resulting UV and
 optical colors are plotted in Figure~\ref{fig:ColorCurves}.  Both
 \spockone and \spocktwo show little or no color variation over the
 period where color information is available.  
-
