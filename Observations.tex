@@ -30,16 +30,34 @@ HST imaging or ground-based spectroscopic observations as needed.  For
 a more complete description of the operations of the FrontierSN
 program, see \citet{Rodney:2015a}.
 
-\subsection{Spectroscopy}\label{sec:Spectroscopy}
 
-Spectroscopy of the \spock\ host galaxy was collected using
-three instruments on the Very Large Telescope (VLT).   Observations with the VLT's
-X-shooter cross-dispersed echelle spectrograph \citep{Vernet:2011}
-were taken on October 19th, 21st and 23rd, 2014 (Program
-093.A-0667(A), PI: J. Hjorth) with the slit centered on the position
-of \spock2.  The total integration time was 4.0 hours for the NIR arm
-of X-shooter, 3.6 hours for the VIS arm, and 3.9 hours for the UVB
-arm.  The spectrum did not provide any detection of the transient
+\subsection{Photometry}\label{sec:Photometry}
+
+The follow-up observations for \spock\ included HST imaging
+observations in infrared and optical bands using the WFC3-IR and
+ACS-WFC detectors, respectively. Table \TODO{(add a table with
+  photometry)} %~\ref{tab:Photometry} and Figure~\ref{fig:LightCurves}
+present photometry of the \spock\ events from all available HST
+observations. The flux was measured on difference images, first using
+aperture photometry with a 0\farcs3 radius, and also by fitting with
+an empirical point spread function (PSF).  The PSF model was defined
+using HST observations of the G2V standard star P330E, observed in a
+separate calibration program.  A separate PSF model was defined for
+each filter, but owing to the long-term stability of the HST PSF we
+used the same model in all epochs.  All of the aperture and PSF
+fitting photometry was carried out using the {\tt PythonPhot} software
+package \citep{Jones:2015}.
+
+\subsection{Host Galaxy Spectroscopy}\label{sec:Spectroscopy}
+
+Spectroscopy of the \spock\ host galaxy was collected using three
+instruments on the Very Large Telescope (VLT).  Observations with the
+VLT's X-shooter cross-dispersed echelle spectrograph
+\citep{Vernet:2011} were taken on October 19th, 21st and 23rd, 2014
+(Program 093.A-0667(A), PI: J. Hjorth) with the slit centered on the
+position of \spock2.  The total integration time was 4.0 hours for the
+NIR arm of X-shooter, 3.6 hours for the VIS arm, and 3.9 hours for the
+UVB arm.  The spectrum did not provide any detection of the transient
 source itself (as we will see below, it had already faded back to its
 quiescent state by that time).  However, it did provide an unambiguous
 redshift for the host galaxy of $z=1.0054\pm0.0002$ from \Ha\ and the
@@ -49,16 +67,17 @@ measures of the photometric redshift of the host: $z=1.00+-0.02$ from
 the BPZ algorithm \citep{Benitez:2000}, and $z=0.92\pm0.05$, derived
 using the EAZY program \citep{Brammer:2008}.
 
-Additional VLT observations were collected using the Visible Multi-object
-Spectrograph \citep[VIMOS][]{LeFevre:2003}, as part of the CLASH-VLT large
-program \citep[Program 186.A-0.798; P.I.: P. Rosati;][]{Rosati:2014}),
-which collected $\sim$4000 reliable redshifts over 600 arcmin$^2$ in
-the \macs0416 field \citep{Grillo:2015a,Balestra:2015}.  These
-massively multi-object observations could potentially have provided
-confirmation of the redshift of the \spock host galaxy with separate
-spectral line identifications in each of the three host galaxy images.
-On the \macs0416 field this program collected 1 hr of useful exposure
-time in good seeing conditions with the Low Resolution Blue grism.
+Additional VLT observations were collected using the Visible
+Multi-object Spectrograph \citep[VIMOS][]{LeFevre:2003}, as part of
+the CLASH-VLT large program \citep[Program 186.A-0.798; P.I.:
+  P. Rosati;][]{Rosati:2014}), which collected $\sim$4000 reliable
+redshifts over 600 arcmin$^2$ in the \macs0416 field
+\citep{Grillo:2015a,Balestra:2015}.  These massively multi-object
+observations could potentially have provided confirmation of the
+redshift of the \spock host galaxy with separate spectral line
+identifications in each of the three host galaxy images.  On the
+\macs0416 field this program collected 1 hr of useful exposure time in
+good seeing conditions with the Low Resolution Blue grism.
 Unfortunately, the wavelength range of this grism (3600-6700 \aa) does
 not include any strong emission lines for a source at z=1.0054, and
 the signal-to-noise (S/N) was not sufficient to provide any clear line
@@ -75,8 +94,8 @@ provided a confirmation of the redshift of the third image of the host
 galaxy, 11.3, with a matching \ionline{O}{[ii]} line at the same
 wavelength.
 
-A final source of spectroscopic information relevant to \spock
-is the Grism Lens Amplified Survey from Space \citep[GLASS; PID:
+A final source of spectroscopic information relevant to \spock is the
+Grism Lens Amplified Survey from Space \citep[GLASS; PID:
   HST-GO-13459; PI:T. Treu][]{Schmidt:2014,Treu:2015a}. The GLASS
 program collected slitless spectroscopy on the \macs0416 field using
 the WFC3-IR G102 and G141 grisms on \HST.  As with the VLT VIMOS data,
@@ -86,19 +105,3 @@ identifications.  There are also no other sources in the GLASS
 redshift catalog\footnote{\url{http://glass.astro.ucla.edu/}} that
 have a spectroscopic redshift consistent with z=1.0054.
 
-\subsection{Photometry}\label{sec:Photometry}
-
-The follow-up observations for \spock\ included HST imaging observations in
-infrared and optical bands using the WFC3-IR and ACS-WFC detectors,
-respectively. Table \TODO{(add a table with photometry)} %~\ref{tab:Photometry}
-and Figure~\ref{fig:LightCurves} present 
-photometry of the \spock\ events
-from all available HST observations. The flux was measured on
-difference images, first using aperture photometry with a 0\farcs3
-radius, and also by fitting with an empirical point spread function
-(PSF).  The PSF model was defined using HST observations of the G2V
-standard star P330E, observed in a separate calibration program.  A
-separate PSF model was defined for each filter, but owing to the
-long-term stability of the HST PSF we used the same model in all
-epochs.  All of the aperture and PSF fitting photometry was carried
-out using the {\tt PythonPhot} software package \citep{Jones:2015}.
