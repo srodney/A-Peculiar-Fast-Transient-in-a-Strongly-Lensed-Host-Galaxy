@@ -10,7 +10,7 @@ Acknowledgments.tex
 Methods.tex
 
 Observations.tex
-figures/spock_critical_curves2/spock_critical_curves2.png
+figures/spock_critical_curves/spock_critical_curves.png
 
 figures/spock_predictions/spock_predictions.png
 figures/composite_lens_model_contours/composite_lens_model_contours.png

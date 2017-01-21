@@ -1,0 +1,6 @@
+version: 1
+multicolumn: false
+export-width: 1.0\textwidth
+web-width: 500px
+align: center
+float: h!
