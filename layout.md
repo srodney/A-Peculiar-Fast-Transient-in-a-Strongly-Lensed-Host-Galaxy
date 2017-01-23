@@ -10,22 +10,19 @@ Acknowledgments.tex
 Methods.tex
 
 Observations.tex
-figures/spock_critical_curves/spock_critical_curves.png
 
-figures/spock_predictions/spock_predictions.png
 figures/composite_lens_model_contours/composite_lens_model_contours.png
+figures/spock_predictions/spock_predictions.png
 LensingModels.tex
 
 Xray.tex
 
 figures/light_curve_linear_fits/light_curve_linear_fits.png
-figures/spock_colorcurves_observerframe/spock_colorcurves_observerframe.png
 LightCurves.tex
 
 figures/spock_hostgalaxy_properties/spock_hostgalaxy_properties.png
 figures/muse_oii_sequence/muse_oii_sequence.png
 HostGalaxy.tex
-
 
 figures/lbv_lightcurve_comparison/lbv_lightcurve_comparison.png
 LBV.tex
@@ -34,7 +31,9 @@ figures/recurrent_nova_lightcurve_comparison/recurrent_nova_lightcurve_compariso
 figures/recurrent_nova_recurrence_comparison/recurrent_nova_recurrence_comparison.png
 RN.tex
 
+figures/spock_critical_curves/spock_critical_curves.png
 Microlensing.tex
 
+figures/spock_colorcurves_observerframe/spock_colorcurves_observerframe.png
 ColorCurves.tex
 
