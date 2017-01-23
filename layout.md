@@ -11,6 +11,7 @@ Methods.tex
 
 Observations.tex
 
+figures/spock_critical_curves/spock_critical_curves.png
 figures/composite_lens_model_contours/composite_lens_model_contours.png
 figures/spock_predictions/spock_predictions.png
 LensingModels.tex
@@ -31,7 +32,6 @@ figures/recurrent_nova_lightcurve_comparison/recurrent_nova_lightcurve_compariso
 figures/recurrent_nova_recurrence_comparison/recurrent_nova_recurrence_comparison.png
 RN.tex
 
-figures/spock_critical_curves/spock_critical_curves.png
 Microlensing.tex
 
 figures/spock_colorcurves_observerframe/spock_colorcurves_observerframe.png

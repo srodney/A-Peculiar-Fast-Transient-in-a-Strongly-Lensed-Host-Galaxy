@@ -19,65 +19,80 @@ of magnifications and time delays are:
 
 \bigskip
 \begin{itemize}
-\item{\it Diego:} Created with the {\tt WSLAP+} software
-  \citep{Sendra:2014}: Weak and Strong Lensing Analysis Package plus
-  member galaxies (Note: no weak-lensing constraints used for this
-  MACS J0416 model). Interactive online model exploration available at
-  \url{http://www.ifca.unican.es/users/jdiego/LensExplorer}.
-\item{{\it Jauzac:} The model of \citet{Jauzac:2014}, generated with
+\item{{\it CATS:} The model of \citet{Jauzac:2014}, generated with
   the {\tt LENSTOOL} software
   \citep{Jullo:2007},\footnote{\url{http://projects.lam.fr/repos/lenstool/wiki}}}
   using strong lensing constraints.  This model makes a
   light-traces-mass assumption and parameterizes cluster and galaxy components
   using psuedo-isothermal elliptical mass distribution (PIEMD) density profiles
   \citep{Eliasdottir:2007}.
-\item{\it Kawamata:} The model of \citet{Kawamata:2016}, built using
+\item{\it GLAFIC:} The model of \citet{Kawamata:2016}, built using
   the {\tt
     GLAFIC}\footnote{\url{http://www.slac.stanford.edu/~oguri/glafic/}}
   software \citep{Oguri:2010b} with strong-lensing constraints. This
   model assumes simply parametrized mass distributions, and model
   parameters are constrained using positions of more than 100 multiple
   images.
-\item{{\it Williams:} A free-form, adaptive grid model developed using
+\item{{\it GRALE:} A free-form, adaptive grid model developed using
   the GRALE software tool \citep{Liesenborgs:2006, Liesenborgs:2007,
     Mohammed:2014, Sebesta:2016}, which implements a genetic algorithm
   to reconstruct the cluster mass distribution with projected Plummer
   \citeyear{Plummer:1911} density profiles.}
-\item{{\it Zitrin:} A model with strong- and weak-lensing constraints,
+\item{\it SWUnited:} The model of \citet{Hoag:2016}, built using the
+  {\tt SWUnited} modeling method \citep{Bradac:2005, Bradac:2009}, in
+  which an adaptive pixelated grid iteratively adapts the mass
+  distribution to match both strong- and weak-lensing constraints.
+  Time delay predictions are not available for this model.
+\item{\it WSLAP+:} Created with the {\tt WSLAP+} software
+  \citep{Sendra:2014}: Weak and Strong Lensing Analysis Package plus
+  member galaxies (Note: no weak-lensing constraints used for this
+  MACS J0416 model). Interactive online model exploration available at
+  \url{http://www.ifca.unican.es/users/jdiego/LensExplorer}.
+\item{{\it Z-LTM:} A model with strong- and weak-lensing constraints,
   built using the ``light-traces-mass'' (LTM) methodology
   \citep{Zitrin:2009a,Zitrin:2015}, first presented for MACS0416 in
   \citet{Zitrin:2013a}.}
 \end{itemize}
 \bigskip    
 
-The {\it Zitrin} model was originally distributed as part of the
-Hubble Frontier Fields lens modeling project,\footnote{For more
-  details, see
+Early versions of the {\it SWUnited}, {\it CATS}, {\it Z-LTM} and {\it
+  GRALE} models were originally distributed as part of the Hubble
+Frontier Fields lens modeling project,\footnote{For more details, see
   \url{https://archive.stsci.edu/prepds/frontier/lensmodels/}} in
 which models were generated based on data available before the start
 of the HFF observations to enable rapid early investigations of lensed
-sources. The {\it Jauzac} and {\it Williams} models are updated
-versions of models developed for that HFF modeling effort by the CATS
-and GRALE teams, respectively.  In all cases the lens modelers made
-use of strong-lensing constraints (multiply-imaged systems and arcs)
-derived from HST imaging collected as part of the CLASH program
-(PI:Postman, HST PID:12459, \citealt{Postman:2012}). These models also
-made use of spectroscopic redshifts in the cluster field from
-\citet{Mann:2012}, \citet{Christensen:2012}, and \citet{Grillo:2015a}.
-The {\it Diego} and {\it Kawamata} models presented here made use of
-the catalog of spectroscopic redshifts and multiply-imaged background
-galaxies from \citep{Caminha:2016}.  Input weak-lensing constraints
-were derived from data collected at the Subaru Telescope by PI
-K. Umetsu (in prep) and archival imaging.  \citet{Priewe:2016}
-provides a more complete description of the methodology of each model
-and a comparison of the magnification predictions and uncertainties
-across the entire \macs0416 field.
+sources. The versions of these models applied here are updated to
+incorporate additional lensing constraints.  In all cases the lens
+modelers made use of strong-lensing constraints (multiply-imaged
+systems and arcs) derived from HST imaging collected as part of the
+CLASH program (PI:Postman, HST PID:12459,
+\citealt{Postman:2012}). These models also made use of spectroscopic
+redshifts in the cluster field from \citet{Mann:2012},
+\citet{Christensen:2012}, and \citet{Grillo:2015a}.  The {\it Diego}
+and {\it Kawamata} models presented here made use of the catalog of
+spectroscopic redshifts and multiply-imaged background galaxies from
+\citep{Caminha:2016}.  Input weak-lensing constraints were derived
+from data collected at the Subaru Telescope by PI K. Umetsu (in prep)
+and archival imaging.
+%\citet{Priewe:2016} provides a more complete
+%description of the methodology of model and a comparison of the
+%magnification predictions and uncertainties across the entire
+%\macs0416 field.
+
+The locations of critical curves for for a source at $z=1$ (the
+redshift of the \spock host galaxy) are shown in
+Figure~\ref{fig:SpockCriticalCurves}. In some cases the best-fit model
+predicts that a single critical curve passes between the two \spock
+locations, as would be expected if the host arc is indeed composed of
+two elongated images of the host galaxy. Other models can accommodate
+a lensing scenario that brings multiple critical curves across the two
+spock locations. 
 
 Figure~\ref{fig:LensModelContours} presents probability distributions
 derived from these models for the three magnifications and two time
 delay values of interest.  These distributions were derived by
-combining the Monte Carlo chains from the Jauzac, Oguri, Williams and
-Zitrin models, with weighting applied to account for the different
+combining the Monte Carlo chains from the CATS, GLAFIC, GRALE and
+Z-LTM models, with weighting applied to account for the different
 number of model iterations in each chain. Four of the five models
 agree that host image 11.3 is the leading image, appearing some 2--6
 years before the other two images.  The models do not agree on the
@@ -86,7 +101,6 @@ as a leading image, and others have it as a trailing image.  However,
 the models do consistently predict that the separation in time between
 those two images should be roughly in the range of 1 to 60 days.
 
-\todo{add reference to crit. curves fig}
 
 %The angular separation of $1\farcs8$ between the \spock events
 %corresponds to a physical separation of many tens of parsecs in the
