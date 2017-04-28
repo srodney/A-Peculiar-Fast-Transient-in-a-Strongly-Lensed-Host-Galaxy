@@ -37,3 +37,4 @@ Microlensing.tex
 figures/spock_colorcurves_observerframe/spock_colorcurves_observerframe.png
 ColorCurves.tex
 
+LongTables.tex
