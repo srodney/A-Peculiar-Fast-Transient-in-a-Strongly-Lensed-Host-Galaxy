@@ -11,7 +11,7 @@ timescales by ($1+z$) to correct for cosmic time dilation, we see that
 both events lasted $<$10 days in the rest frame.
 
 To interpret the observed light curves and the timing of these two
-events, we use six independently constructed cluster mass models to
+events, we use seven independently constructed cluster mass models to
 determine the impact of gravitational lensing from the \MACS0416
 cluster (Methods \ref{sec:LensingModels}).  The lensing configuration that
 has been consistently adopted for this cluster assumes that the arc in
@@ -23,20 +23,32 @@ Figure~\ref{fig:SpockDetectionImages} \citep{Zitrin:2013a,
 passes roughly mid-way between the two observed \spock locations.
 
 In Table~\ref{tab:LensModelPredictions} we report predicted time
-delays from our six lens models relative to the \spockone\ event,
-which appeared in January 2014 in host image 11.2.  We also report
-absolute magnification values between about $\mu=10$ and $\mu=100$ for
-both events. This wide range is due primarily to the close proximity
-of the \spock\ events to the lensing critical curve (the region of
-theoretically infinite magnification) for sources at $z=1$.  Note that
-the magnifications for \spockone\ and \spocktwo\ are highly
-correlated.  A variation of a given lens model that moves the critical
-curve closer to the position of \spockone\ would drive the
-magnification of that event much higher (toward $\mu_1\sim100$), but
-that would also have the effect of moving the critical curve farther
-from \spocktwo\, which would necessarily drive its magnification
-downward (toward $\mu_2\sim10$).  Figure~\ref{fig:LightCurves} shows
-that the observed peak luminosities for the two events agree to within
+delays from seven lens models relative to the \spockone\ event, which
+appeared in January 2014 in host image 11.2.  We also report absolute
+magnification values between about $\mu=10$ and $\mu=300$ for both
+events. This wide range is due primarily to the close proximity of the
+\spock\ events to the lensing critical curve (the region of
+theoretically infinite magnification) for sources at $z=1$.  The
+location of the critical curve relative to each \spock event varies
+significantly among the models (Methods
+\ref{sec:CriticalCurveLocation}).  Note that the magnifications for
+\spockone\ and \spocktwo\ are highly correlated.  Most variations that
+would move a critical curve closer to the position of \spockone\ would
+drive the magnification of that event much higher (toward
+$\mu_1\sim100$), but that would generally also have the effect of
+moving the critical curve farther from \spocktwo\, which would
+necessarily drive its magnification downward (toward
+$\mu_2\sim10$). The \spock events are also affected by lensing from
+galaxies along the line of sight that are in the cluster foreground
+and between the cluster and the host galaxy.  These lensing
+perturbations are not accounted for in most of our models, and
+introduce a substantial systematic uncertainty for the model-predicted
+location of the critical curve, the magnifications and the time delays
+(Methods \ref{sec:LineOfSightEffects}).
+
+
+Figure~\ref{fig:LightCurves} shows that the
+observed peak luminosities for the two events agree to within
 $\sim30\%$, which means that a factor of 10 difference in
 magnification would have to be compensated by a correspondingly steep
 slope in the intrinsic SED of the source from rest-frame UV to optical
@@ -46,21 +58,33 @@ wavelengths.
 \begin{deluxetable}{lccccc}\label{tab:LensModelPredictions}
 \tablewidth{\linewidth} \tablecolumns{6} \tablecaption{Lens model
   predictions for time delays and
-  magnifications. \label{tab:LensModelPredictions}} 
+  magnifications at the observed locations of the \spock transients. \label{tab:LensModelPredictions}} 
 \tablehead{
-  \colhead{Model} & \colhead{$\Delta t_{\rm NW:SE}$} & \colhead{$\Delta
-    t_{\rm NW:11.3}$} & \colhead{$\mu_1$} & \colhead{$\mu_2$} &
-  \colhead{$\mu_3$}\\ \colhead{} & \colhead{(days)} &
-  \colhead{(years)} & \colhead{} & \colhead{} & \colhead{} }
+  \colhead{Model} & \colhead{$\Delta t_{\rm NW:SE}$} & \colhead{$\Delta t_{\rm NW:11.3}$} &
+  \colhead{$\lvert\mu_{\rm NW}\rvert$} & \colhead{$\lvert\mu_{\rm SE}\rvert$} &  \colhead{$\lvert\mu_{11.3}\rvert$}\\
+  \colhead{} & \colhead{(days)} & \colhead{(years)} & \colhead{} & \colhead{} & \colhead{} }
 \startdata
-SWunited & \nodata & \nodata & 38 $\pm8$ & 12.8 $\pm0.8$ & 2.9 $\pm0.1$\\[0.5em]
-WSLAP+ & -48$\pm$10 & 0.8 & 35$\pm$20 & 30$\pm$20 & \nodata\\[0.5em]
 %Jauzac-A & 29$\pm3$ & -2.2$\pm0.1$ & 36 $^{+4}_{-3}$ & 17 $\pm1$ & 4.5 $\pm0.1$\\[0.5em]
 CATS & 28$^{+5}_{-7}$ & -2.2$^{+0.1}_{-0.2}$ & 37 $\pm3$ & 18 $\pm2$ & 4.6 $\pm0.1$\\[0.5em]
 %Jauzac-C & 2.5$^{+0.8}_{-1.0}$ & -3.0$\pm0.1$ & 37 $^{+4}_{-3}$ & 16 $^{+1}_{-2}$ & 3.2 $\pm0.05$\\[0.5em]
-GLAFIC & 4.1$^{+5.5}_{-3.4}$ & -5.0$^{+0.5}_{-0.6}$ & 29 $^{+43}_{-10}$ & 84 $^{+103}_{-38}$ & 3.0 $^{+0.2}_{-0.2}$\\[0.5em]
+GLAFIC & 4.1$^{+5.5}_{-3.4}$ & -5.0$^{+0.5}_{-0.6}$ & 29 $^{+43}_{-10}$ & 84 $^{+103}_{-38}$ & 3.0 $\pm0.2$\\[0.5em]
+GLEE-A &  36.0$^{+6.3}_{-7.4}$ & -6.2$^{+0.3}_{-0.2}$ & 182 $^{+201}_{-83}$ & 67$^{+31}_{-16}$ & 2.9$\pm0.1$ \\[0.5em]
+GLEE-B &  50.7$^{+5.6}_{-4.8}$ & -5.3$^{+0.2}_{-0.3}$ & 68$^{+9}_{-6}$ & 246$^{+279}_{-122}$ &  3.2$\pm0.2$\\[0.5em]
 GRALE & -10$^{+1}_{-7}$ & -2.5$^{+1.0}_{-3.1}$ & 13 $^{+11}_{-6}$ & 12 $^{+9}_{-5}$ & 3.1 $^{+2.2}_{-0.9}$\\[0.5em]
+SWunited & \nodata & \nodata & 38 $\pm8$ & 13 $\pm1$ & 2.9 $\pm0.1$\\[0.5em]
+WSLAP$^{+}$ & -48$\pm$10 & 0.8 & 35$\pm$20 & 30$\pm$20 & \nodata\\[0.5em]
 Z-LTM & 42$^{+13}_{-9}$ & -3.7$\pm0.3$ & 90 $^{+61}_{-27}$ & 32 $^{+8}_{-10}$ & 3.6 $^{+0.2}_{-0.5}$\\
+%
+%GLEE-A            NWp                   SEp                   3rdp                  NWo                   SEo                    3rdo
+%Dt (days)  | 0 [0,0]             | -0.45 [-0.60,-0.33] | -1936 [-2037,-1814] | 0 [0,0]             | 36.0 [28.6,42.3]     | -2245 [-2308,-2143] |
+%\mu        | -113 [-152,-94]     | 97 [65,132]         | 3.04 [2.95,3.11]    | -182 [-383,-99]     | 67 [51,98]           | 2.87 [2.81,2.94]    |
+%%
+%
+%GLEE-B           NWp                         SEp                       3rdp                       NWo                        SEo                          3rdo
+%Dt(days) |    0.0 [ 0 , 0 ]        |   -0.14 [-0.25,-0.07] |-1756.7 [-1894.6, -1640.1]|                0 [0, 0] |    50.66 [45.91, 56.28] |-1938.9 [-2033.7, -1859.7] |  
+%\mu      | -164.87 [-197, -146.36] |  91.96 [72.6, 115.88] |        3.31 [3.1, 3.48]  |  -67.64 [-76.08, -61.97]| 245.81 [124.29, 524.55] |     3.19 [3.03, 3.32]     |
+%
+%
 %% New Jauzac model predictions
 %$\mu_{\rm NW}$ = 0.2 $^{+0.1}_{-0.1}$
 %$\mu_{\rm SE}$ = 0.4 $^{+0.4}_{-0.1}$
@@ -70,8 +94,6 @@ Z-LTM & 42$^{+13}_{-9}$ & -3.7$\pm0.3$ & 90 $^{+61}_{-27}$ & 32 $^{+8}_{-10}$ & 
 \enddata
 \tablecomments{
   Each lens model is identified by the name of the modeling method.
-  %lead modeler or
-  %the principal investigator of the modeling team.
   Time delays give the predicted delay relative to an
   appearance in the NW host image, 11.2. Positive (negative) values indicate the
   NW image is the leading (trailing) image of the pair.

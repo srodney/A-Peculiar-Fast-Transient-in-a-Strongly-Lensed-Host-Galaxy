@@ -14,7 +14,7 @@
 %delay (in years) between appearance in the NW host image 11.2 and the
 %more widely separated image 11.3.
 
-The six lens models used to provide estimates of the plausible range
+The seven lens models used to provide estimates of the plausible range
 of magnifications and time delays are:
 
 \bigskip
@@ -33,6 +33,10 @@ of magnifications and time delays are:
   model assumes simply parametrized mass distributions, and model
   parameters are constrained using positions of more than 100 multiple
   images.
+\item{\it GLEE:} A new model built using the {\tt GLEE} software
+  \citep{Suyu:2010b, Suyu:2012} with the same strong-lensing
+  constraints used in \citet{Caminha:2017}, representing mass
+  distributions with simply parameterized NFW profiles. 
 \item{{\it GRALE:} A free-form, adaptive grid model developed using
   the GRALE software tool \citep{Liesenborgs:2006, Liesenborgs:2007,
     Mohammed:2014, Sebesta:2016}, which implements a genetic algorithm
@@ -71,13 +75,15 @@ redshifts in the cluster field from \citet{Mann:2012},
 \citet{Christensen:2012}, and \citet{Grillo:2015a}.  The {\it Diego}
 and {\it Kawamata} models presented here made use of the catalog of
 spectroscopic redshifts and multiply-imaged background galaxies from
-\citet{Caminha:2016}.  Input weak-lensing constraints were derived
+\citet{Caminha:2017}.  Input weak-lensing constraints were derived
 from data collected at the Subaru Telescope by PI K. Umetsu (in prep)
 and archival imaging.
 %\citet{Priewe:2016} provides a more complete
 %description of the methodology of model and a comparison of the
 %magnification predictions and uncertainties across the entire
 %\macs0416 field.
+
+\subsection{Critical Curve Location}\label{sec:CriticalCurveLocation}
 
 The locations of critical curves for a source at $z=1$ (the redshift
 of the \spock host galaxy) are shown in
@@ -107,7 +113,6 @@ these were independent events, then a time delay on the order of tens of
 days between image 11.1 and 11.2 could have resulted in time-delayed 
 events that were missed by the \HST imaging of this field.
 
-
 %The angular separation of $1\farcs8$ between the \spock events
 %corresponds to a physical separation of many tens of parsecs in the
 %source plane.  A star could not traverse that distance in the
@@ -115,3 +120,43 @@ events that were missed by the \HST imaging of this field.
 %even with a critical curve smeared out by the effects of the ICL, it
 %would be impossible for a single star crossing a single caustic in the
 %source plane to be responsible for both transients.
+
+Because of the proximity of the critical curves in all models, the
+predicted time delays and magnification factors are significantly
+different if calculated at the model-predicted positions instead of
+the observed positions.  For example, in the GLEE model series (GLEE-A
+and GLEE-B) when switching from the observed to model-predicted
+positions the arrival order of the NW and SE images flips, the
+expected time delay drops from tens of days to $<$1 day, and the
+magnifications decrease by 40-60\%.
+
+
+\subsection{Line of Sight Lensing Effects}\label{sec:LineOfSightEffects}
+ 
+In Figure~\ref{fig:LineOfSightEffects}, we have marked in white a
+spectroscopic foreground galaxy (at z=0.0557), approximately 4 arcsec
+(in projection) from the NW image of Spock. This galaxy, apparently
+not very massive, does not enter in our models, but it certainly
+contributes (and not in the same way) to the magnification and
+time-delay values of the NW and SE images of Spock. Another possible
+source of systematics for these quantities is associated to system 12
+(in purple) in Caminha et al. 2017. This is a spiral galaxy, at
+z=0.9397, multiply lensed into 3 very distorted images. In the
+attached figure, we have shown the reconstructed source positions,
+according to our best-fit model, for this galaxy and Spock. Their
+projected distance is approximately 3 arcsec. As a consequence, also
+this spiral galaxy acts as a lens on Spock, affecting time delay and
+magnification of its multiple images. This contribution, as the
+previous one, is not taken into account in any of the models you
+have. It is not easy to understand at which level and in which
+direction the two mentioned effects could change the time-delay and
+magnification values of the NW and SE images of Spock. A detailed
+multi-plane lensing analysis would be necessary. We think it would be
+correct to mention these sources of systematic errors, from which all
+current lensing models suffer.
+
+There are also baseline model is labeled {\tt GLEE-A}.  The {\tt GLEE-B} model variation is
+  a multi-plane model that includes secondary lensing effects due to
+  galaxies not belonging to the cluster that are close the line of
+  sight to \spock host galaxy.
+
