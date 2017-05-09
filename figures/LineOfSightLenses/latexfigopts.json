@@ -1,4 +1,4 @@
-{"width":"1\\columnwidth",
- "figure_env": "figure",
+{"width":"1\\textwidth",
+ "figure_env": "figure*",
  "placement":"tbp"
 }
