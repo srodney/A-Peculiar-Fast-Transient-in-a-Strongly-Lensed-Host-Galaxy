@@ -40,8 +40,8 @@ of magnifications and time delays are:
 \item{{\it GRALE:} A free-form, adaptive grid model developed using
   the GRALE software tool \citep{Liesenborgs:2006, Liesenborgs:2007,
     Mohammed:2014, Sebesta:2016}, which implements a genetic algorithm
-  to reconstruct the cluster mass distribution with projected
-  \citet{Plummer:1911} density profiles.}
+  to reconstruct the cluster mass distribution with hundreds to
+  thousands of projected \citet{Plummer:1911} density profiles.}
 \item{\it SWUnited:} The model of \citet{Hoag:2016}, built using the
   {\tt SWUnited} modeling method \citep{Bradac:2005, Bradac:2009}, in
   which an adaptive pixelated grid iteratively adapts the mass
@@ -85,22 +85,23 @@ and archival imaging.
 Figure~\ref{fig:LensModelContours} presents probability distributions
 derived from these models for the three magnifications and two time
 delay values of interest.  These distributions were derived by
-combining the Monte Carlo chains from the CATS, GLAFIC, GLEE, GRALE
-and ZLTM models, with weighting applied to account for the different
-number of model iterations in each chain. All five of these models
-agree that host image 11.3 is the leading image, appearing some 3--7
-years before the other two images.  The models do not agree on the
-arrival sequence of images 11.1 and 11.2: some have the NW image 11.2
-as a leading image, and others have it as a trailing image.  However,
-the models do consistently predict that the separation in time between
-those two images should be roughly in the range of 1 to 60 days. As
-shown in Figure~\ref{fig:SpockDelayPredictions}, \spockone and
-\spocktwo are inconsistent with these predicted time delays if one
-assumes that they are delayed images of a single event.  However, if
-these were independent events, then a time delay on the order of tens
-of days between image 11.1 and 11.2 could have resulted in
-time-delayed events that were missed by the \HST imaging of this
-field.
+combining the Monte Carlo chains from the CATS, GLAFIC, GLEE, and ZLTM
+models, and individual runs of the GRALE model, which uses a different
+random seed for each run.  We applied a weight to each model to
+account for the different number of model iterations used by each
+modeling team. All five of these models agree that host image 11.3 is
+the leading image, appearing some 3--7 years before the other two
+images.  The models do not agree on the arrival sequence of images
+11.1 and 11.2: some have the NW image 11.2 as a leading image, and
+others have it as a trailing image.  However, the models do
+consistently predict that the separation in time between those two
+images should be roughly in the range of 1 to 60 days. As shown in
+Figure~\ref{fig:SpockDelayPredictions}, \spockone and \spocktwo are
+inconsistent with these predicted time delays if one assumes that they
+are delayed images of a single event.  However, if these were
+independent events, then a time delay on the order of tens of days
+between image 11.1 and 11.2 could have resulted in time-delayed events
+that were missed by the \HST imaging of this field.
 
 %The angular separation of $1\farcs8$ between the \spock events
 %corresponds to a physical separation of many tens of parsecs in the
