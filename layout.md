@@ -13,8 +13,8 @@ Observations.tex
 
 figures/composite_lens_model_contours/composite_lens_model_contours.png
 figures/spock_critical_curves/spock_critical_curves.png
-figures/LineOfSightLenses/macs0416_lineofsight_lensing.png
 figures/spock_predictions/spock_predictions.png
+figures/LineOfSightLenses/macs0416_lineofsight_lensing.png
 LensingModels.tex
 
 Xray.tex
