@@ -36,7 +36,7 @@ of magnifications and time delays are:
 \item{\it GLEE:} A new model built using the {\tt GLEE} software
   \citep{Suyu:2010b, Suyu:2012} with the same strong-lensing
   constraints used in \citet{Caminha:2017}, representing mass
-  distributions with simply parameterized NFW profiles. 
+  distributions with simply parameterized mass profiles. 
 \item{{\it GRALE:} A free-form, adaptive grid model developed using
   the GRALE software tool \citep{Liesenborgs:2006, Liesenborgs:2007,
     Mohammed:2014, Sebesta:2016}, which implements a genetic algorithm
@@ -222,21 +222,30 @@ critical curve GLAFIC-var model is strongly disfavored by the
 However, we note that neither model incorporates the temporal
 constraints of the observed time delay. 
 
-A second variation of the CATS model was also used to test the
-plausibility of multiple critical curves intersecting the \spock
-locations.  As in the GLAFIC-var case, this CATS model variation is
-required to have critical curves passing very near the \spock
-positions.  Although the model can satisfy that constraint, in doing
-so the quality of the model fit is degraded near the third \spock host
-galaxy image (11.3).  In particular, the model is no longer able to
-accurately reproduce the multiple images of a separate background
-galaxy in the vicinity of image 11.3 (system 14 in
-\citet{Caminha:2017}), which is strongly lensed by a pair of cluster
-member galaxies.  When removing this galaxy-galaxy lensing from the
-CATS model, we find the fit to the remaining lensing constraints is
-improved.  This variation of the CATS model implies that the \spock
-host galaxy arc actually comprises 5 separate galaxy images.  The \HST
-images do not exhibit any breaks or substructure in the arc that would
-be generally expected in such a situation.
+A second variation of the CATS model (CATS-var2) was also used to test
+the plausibility of multiple critical curves intersecting the \spock
+locations.  As in the GLAFIC-var case, this model requires that
+critical curves pass very near the \spock positions.  The model can
+accommodate that constraint, insofar as the root mean square (RMS)
+error of the best-fit model is similar to that of the CATS and
+CATS-var models.  However, in this CATS-var2 model the \spock host
+galaxy is predicted to be multiply-imaged 5 times. The \HST images do
+not exhibit any breaks or substructure in the arc that would be
+generally expected in such a situation.  
 
-
+Moreover, this CATS-var2 model has strong implications for a separate
+background galaxy in the vicinity of image 11.3 (system 14 in
+\citet{Caminha:2017}).  This galaxy is strongly lensed by a pair of
+spectroscopically confirmed cluster member galaxies
+\citep{Caminha:2017}. Comparing the observed positions of the multiple
+images of System 14 against the CATS-var2 model-predicted positions,
+we find that this System contributes significantly to the global RMS
+error for the model--indicating that the CATS-var2 model can not
+accurately reproduce the multiple images of System 14.  Conversely,
+when this system is removed as a model constraint, the RMS error
+decreases, and the CATS-var2 model can more successfully pass the
+critical line through the two \spock locations.  A possible
+interpretation of this is that the established strong lensing
+constraints (especially System 14) are incompatible with the
+requirement that multiple critical curves must intersect the two
+\spock locations.
