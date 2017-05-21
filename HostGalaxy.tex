@@ -69,33 +69,55 @@ transients are not coincident with the center of their host galaxy.
 \input{muse_linefits}
 
 In addition to the \HST imaging data, we also have spatially resolved
-spectroscopy from the MUSE integral field data. The only significant
+spectroscopy from the MUSE integral field data.
+The only significant
 spectral line feature for the \spock host is the \forbidden{O}{ii}
-($\lambda\lambda$ 3727, 3729) doublet, observed at 7474 and 7478
-\AA. Figure~\ref{fig:MUSEOIISequence} shows the observed
-\forbidden{O}{ii} lines at 10 positions along the length of the arc,
-which comprises images 11.1 and 11.2. Each extraction has been
-normalized to show a peak line flux at unity, so that the line
-profiles and the doublet line ratios may be more easily compared.  At
-each position the lines were extracted using apertures with a radius
-of 0\farcs6, so adjacent extractions are not independent, although the
-two extractions centered on the \spockone and -SE positions have no
-overlap.
+($\lambda\lambda$ 3726, 3729) doublet, observed at 7474 and 7478
+\AA.
+To examine this feature in detail, one-dimensional spectra were extracted from the three-dimensional MUSE data cube at a series of locations along the \spock host galaxy arc. 
 
-From each extracted 1-D spectrum the integrated line flux, observed
-wavelength of line center ($\lambda_{\rm center}$), and full width at
-half maximum (FWHM) were found by fitting a Gaussian profile to each
-component of the doublet.  Properties derived from these line fits are
-reported in Table~\ref{tab:MuseLineFits}. The \forbidden{O}{ii} lines
-do not exhibit any discernible gradient across the host galaxy images
-in terms of the wavelength of line centers, full width at half
-maximum, or the intensity ratio of the two components of the doublet.
-Thus, the \forbidden{O}{ii} measurements from MUSE cannot be used to
-distinguish either \spock location from the other, or to definitively
-answer whether either position is coincident with the center of the
-host galaxy.  We conclude that it is plausible but not certain that
-the two \spock events arose from the same physical location in the
-host galaxy.
+Figure~\ref{fig:MUSEOIISequence} depicts the apertures used for these
+extractions, shows the observed \forbidden{O}{ii} lines at the
+\spock-NW and SE positions, and compares the \forbidden{O}{ii} line
+profiles to other positions along the length of the host galaxy arc.
+At each position the lines were extracted using apertures with a
+radius of 0\farcs6, so adjacent extractions are not independent,
+although the two extractions centered on the \spockone and -SE
+positions have no overlap.  
 
+A difference in the shape of the \forbidden{O}{ii} lines or the
+doublet line ratio could provide evidence for a different environment
+at the two \spock locaions, which would suggest that the two events
+emerged from independent sources.  For a visual test for spectral
+deviations, we first constructed a mean spectrum by averaging the 1-D
+spectra from five non-overlapping apertures (apertures 1, 3, 5, 7,
+9). To account for differences in magnification and host galaxy
+intensity across the arc, each input spectrum was normalized at the
+wavelength 7477.7 $\AA$, which corresponds to the center of the
+$\lambda$3729 component of the \forbidden{O}{ii} emission line.  This
+mean spectrum was then subtracted from the 1-D spectrum of each
+aperture, producing a set of ``residual spectra,'' shown in
+Figure~\ref{fig:MUSEOIISequence} in the lower left panel.  These
+spectra show no indication of a systematic trend in the wavelength
+position, shape or line ratio across the arc.  Similarly, a comparison
+of the spectra from the \spock-NW and SE locations (right panels of
+Figure~\ref{fig:MUSEOIISequence}) reveals no significant difference in
+the \forbidden{O}{ii} line shapes.
 
+This qualitative comparison is born out by a more quantitative
+assessment, reported in Table~\ref{tab:MuseLineFits}. We fit a
+Gaussian profile to each component of the \forbidden{O}{ii} doublet,
+separately in each extracted 1-D spectrum. From these fits we measured
+the integrated line flux, observed wavelength of line center
+($\lambda_{\rm center}$), full width at half maximum (FWHM), and the
+intensity ratio of the two components of the doublet.  These
+quantities--all reported in Table~\ref{tab:MuseLineFits}--do not
+exhibit any discernible gradient across the host galaxy.  Thus, the
+\forbidden{O}{ii} measurements from MUSE cannot be used to distinguish
+either \spock location from the other, or to definitively answer
+whether either position is coincident with the center of the host
+galaxy (as would be required, for example, if these transients were
+from an AGN).  We conclude that it is entirely plausible but not
+certain that the two \spock events arose from the same physical
+location in the host galaxy.
 
