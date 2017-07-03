@@ -29,7 +29,7 @@ clean:
 
 
 #Generate a pdf file using a Nature latex style file
-NATUREFILE=spock_natureastronomy
+NATUREFILE=spock_arxiv
 nature: 
 	pdflatex $(NATUREFILE).tex
 	bibtex $(NATUREFILE)
@@ -37,11 +37,15 @@ nature:
 	pdflatex $(NATUREFILE).tex
 	open $(NATUREFILE).pdf
 
-NATUREFILE=spock_natureastronomy
+NATUREFILE=spock_arxiv
 natureupdate: 
 	pdflatex $(NATUREFILE).tex
 	open $(NATUREFILE).pdf
 
+
+arxiv: nature
+
+arxivupdate: natureupdate
 
 #Generate a pdf file using a modified python script from et_eq
 local: 
