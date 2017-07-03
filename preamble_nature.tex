@@ -1,0 +1,278 @@
+\usepackage{graphicx}
+\usepackage[space]{grffile}
+\usepackage{latexsym}
+\usepackage{textcomp}
+%\usepackage{array} % incompatible with deluxetable? 
+\usepackage{booktabs,multirow}
+\usepackage{amsfonts,amsmath,amssymb}
+
+% You can conditionalize code for latexml or normal latex using this.
+\newif\iflatexml\latexmlfalse
+\DeclareGraphicsExtensions{.pdf,.PDF,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{hyperref}      % url text formatting
+\usepackage{deluxetable}
+\usepackage{xspace} % def commands that appear not to eat a space
+\usepackage{journalnames} % aastex-style Astrophysics journal abbrev.
+
+\usepackage{multicol,caption} % for mixing single- and two-column text
+\setlength\columnsep{12pt}
+
+% Redefine the figure environment to produce single-column figures
+%\renewcommand{\caption}[1]{\captionof{figure}{#1}}
+\newenvironment{Figure}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+
+
+\providecommand\citet{\cite}
+\providecommand\citep{\cite}
+\providecommand\citealt{\cite}
+
+\def\dataset[#1]#2{#2}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TODO comments in red text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[usenames,dvipsnames]{xcolor}  % colored text
+%\newcommand{\todo}[1]{{ \textcolor{red}{{\bf TODO:} #1}}}
+%\newcommand{\TODO}[1]{{ \textcolor{red}{{\bf TODO:} #1}}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% AUTHOR-DEFINED MACROS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Cosmology:
+\def\Om{\ensuremath{\Omega_{\rm m}}\xspace}
+\def\Ot{\ensuremath{\Omega_{\rm tot}}\xspace}
+\def\Ob{\ensuremath{\Omega_{\rm b}}\xspace}
+\def\OL{\ensuremath{\Omega_{\Lambda}}\xspace}
+\def\Ok{\ensuremath{\Omega_{\rm k}}\xspace}
+\def\om{\ensuremath{\omega_{\rm m}}\xspace}
+\def\ob{\ensuremath{\omega_{\rm b}}\xspace}
+\def\wo{\ensuremath{w_0}\xspace}
+\def\wa{\ensuremath{w_{\rm a}}\xspace}
+\def\lcdm{$\Lambda$CDM\xspace}
+\def\LCDM{$\Lambda$CDM\xspace}
+\def\wcdm{$w$CDM\xspace}
+\def\Ho{\ensuremath{H_0}\xspace}
+\def\DA{\ensuremath{D_A}\xspace}
+\def\DL{\ensuremath{D_L}\xspace}
+
+% Astronomy:
+\def\arcsec{\ensuremath{^{\prime\prime}}\xspace} 
+\def\farcm{\mbox{\ensuremath{.\mkern-4mu^\prime}}}
+\def\farcs{\mbox{\ensuremath{.\!\!^{\prime\prime}}}}
+\def\fdg{\mbox{\ensuremath{.\!\!^\circ}}}
+\def\arcdeg{\ensuremath{^{\circ}}\xspace}
+\def\hgpcq{\mbox{$h^{-3}$Gpc$^3$}\xspace}
+\def\hmpcq{\mbox{$h^{-3}$Mpc$^3$}\xspace}
+\def\perhmpcq{\mbox{$h^{3}$Mpc$^{-3}$}\xspace}
+\def\hmpc{\mbox{$h^{-1}$Mpc}\xspace}
+\def\hmpci{\mbox{$h$\,Mpc$^{-1}$}\xspace}
+\def\mpc{\mbox{Mpc}\xspace}
+\def\mpci{\mbox{Mpc$^{-1}$}\xspace}
+\def\mpcq{\mbox{Mpc$^{-3}$}\xspace}
+\def\Msun{\mbox{M$_{\odot}$}\xspace}
+\def\Rsun{\mbox{R$_{\odot}$}\xspace}
+\def\Av{\mbox{$A_V$}\xspace}
+\def\Rv{\mbox{$R_V$}\xspace}
+\def\Ha{\mbox{H$\alpha$}\xspace}
+\newcommand\ionline[2]{#1{\scshape{#2}}}
+\newcommand\forbidden[2]{[#1{\scshape{#2}}]}
+\newcommand{\isotope}[2]{${}^{#1}$#2}
+
+% Supernovae : 
+\def\CCSN{CC\,SN\xspace}
+\def\CCSNe{CC\,SNe\xspace}
+\def\SNIa{SN\,Ia\xspace}
+\def\SNeIa{SNe\,Ia\xspace}
+\def\Mch{\mbox{M$_{\rm Ch}$}\xspace}
+\def\NiFiftySix{\ensuremath{^{56}\mbox{Ni}}\xspace}
+\def\CoFiftySix{\ensuremath{^{56}\mbox{Co}}\xspace}
+\def\FeFiftySix{\ensuremath{^{56}\mbox{Fe}}\xspace}
+\def\dmfifteen{\ensuremath{\Delta\mbox{m}_{15}}\xspace}
+\def\deltamfifteen{\ensuremath{\Delta\mbox{m}_{15}}\xspace}
+
+% Other explosions:
+\def\etacar{\ensuremath{\eta\,\mbox{Car}}\xspace}
+\def\etaCar{\ensuremath{\eta\,\mbox{Car}}\xspace}
+\def\m31n{M31N\,2008-12a\xspace}
+\def\M31N{M31N\,2008-12a\xspace}
+
+% Missions:
+\def\HST{{\it HST}\xspace}
+\def\Hubble{{\it Hubble}\xspace}
+\def\Hubbles{{\it Hubble's}\xspace}
+\def\Spitzer{{\it Spitzer}\xspace}
+\def\Chandra{{\it Chandra}\xspace}
+\def\Herschel{{\it Herschel}\xspace}
+\def\XMM{{\it XMM}\xspace}
+\def\SWIFT{{\it SWIFT}\xspace}
+
+
+% Specific to this paper: 
+\def\spock{HFF14Spo\xspace}
+\def\spockone{HFF14Spo-NW\xspace}
+\def\spocktwo{HFF14Spo-SE\xspace}
+\def\spockNW{HFF14Spo-NW\xspace}
+\def\spockSE{HFF14Spo-SE\xspace}
+\def\macs0416{MACS0416\xspace}
+\def\MACS0416{MACS0416\xspace}
+\def\fullmacs0416{MACS\,J0416.1-2403\xspace}
+\def\Lpk{\ensuremath{L_{\rm pk}}\xspace}
+\def\t2{\ensuremath{t_{2}}\xspace}
+\def\trec{\ensuremath{t_{\rm rec}}\xspace}
+\def\microjansky{\ensuremath{\mu Jy}\xspace}
+
+
+% --------------------------------------------------
+% Author list 
+%   use the \affilref and \affilreftxt commands 
+%   to get an author list and footnoted institutional
+%   addresses that count themselves without duplicating
+% --------------------------------------------------
+\newcommand\affiliation[1]{%
+ \move@AU\move@AF%
+ \begingroup%
+  \@affiliation{\hspace*{2mm}#1}%
+}%
+\let\affil=\affiliation
+\def\affil@mark#1{\textsuperscript{#1}}
+\def\affile@mark@pad{0.2em}
+\def\altaffilmark#1{\affil@mark{#1}}
+
+%\def\altaffiltext#1#2{%
+%\item{#1
+%\global\alt@affil@toks\expandafter{\the\alt@affil@toks\\\hspace*{3mm}\affil@mark{#1}\hspace*{\affile@mark@pad}#2}%
+%\global\alt@affil@toks@count\expandafter{\the\alt@affil@toks@count\stepcounter{front@matter@foot@note}}%
+%}
+
+
+\newcounter{affilct}
+\setcounter{affilct}{0}
+
+% --------------------------------------------------
+% \affilref{refcode}
+%   Use this command inside each \altaffilmark{} instance.
+%   It checks if the affiliation has already been used, and generates
+%   a new affiliation reference number only if needed.
+%   The user-defined refcode value will then be used by \affilreftxt
+%   to set the same index number in the author list at the top and 
+%   the footnoted list of institutional addresses. 
+\makeatletter
+\newcommand{\affilref}[1]{%
+  \@ifundefined{c@#1}%
+    {\newcounter{#1}%
+     \setcounter{#1}{\theaffilct}%
+     \refstepcounter{affilct}%
+     \label{#1}%
+     }{}%
+  \ref{#1}%
+ }
+\makeatother
+
+
+% --------------------------------------------------
+% \affilreftxt{refcode}{address} : 
+%   Use this command after each author definition 
+%   to generate the footnote text containing one institutional
+%   address for that author. 
+%   It checks if the address has already been used, and generates
+%   a new affiliation footnote with text only if needed.
+\makeatletter
+\newcommand*\affilreftxt[2]{%
+  \@ifundefined{c@#1txt}
+    {\newcounter{#1txt}%
+     \setcounter{#1txt}{1}
+     \altaffiltext{\ref{#1}}{#2}
+     }{
+     }
+  }
+\makeatother
+% --------------------------------------------------
+
+
+% --------------------------------------------------
+% Institutions
+%   define a command for each institution's mailing address
+% --------------------------------------------------
+\newcommand{\HubbleFellow}{Hubble Fellow}
+\newcommand{\Packard}{Packard Fellow}
+\newcommand{\CalTech}{Cahill Center for Astronomy and Astrophysics, California Institute of Technology, MC 249-17, Pasadena, CA 91125, USA}
+%\newcommand{\CalTech}{California Institute of Technology, 1200 East California Boulevard, Pasadena, CA 91125}
+\newcommand{\BenGurion}{Ben-Gurion University of the Negev P.O.B. 653 Beer-Sheva 8410501, Israel}
+\newcommand{\Cantabria}{IFCA, Instituto de F\'isica de Cantabria (UC-CSIC), Av. de Los Castros s/n, 39005 Santander, Spain}
+\newcommand{\IFCA}{\Cantabria}
+\newcommand{\JHU}{Department of Physics and Astronomy, The Johns Hopkins University, 3400 N. Charles St., Baltimore, MD 21218, USA}
+\newcommand{\Michigan}{Department of Astronomy, University of Michigan, 1085 S. University Avenue, Ann Arbor, MI 48109, USA}
+\newcommand{\UCSC}{University of California Santa Cruz, 1156 High St, Santa Cruz, CA 95064}
+\newcommand{\UCDavis}{University of California Davis, 1 Shields Avenue, Davis, CA 95616}
+\newcommand{\UCLA}{Department of Physics and Astronomy, University of California, Los Angeles, CA 90095}
+\newcommand{\USC}{Department of Physics and Astronomy, University of South Carolina, 712 Main St., Columbia, SC 29208, USA}
+\newcommand{\TokyoRCEU}{Research Center for the Early Universe, University of Tokyo, 7-3-1 Hongo, Bunkyo-ku, Tokyo 113-0033, Japan}
+\newcommand{\TokyoPhys}{Department of Physics, University of Tokyo, 7-3-1 Hongo, Bunkyo-ku, Tokyo 113-0033, Japan}
+\newcommand{\TokyoIPMU}{Kavli Institute for the Physics and Mathematics of the Universe (Kavli IPMU, WPI), University of Tokyo, 5-1-5 Kashiwanoha, Kashiwa, Chiba 277-8583, Japan}
+\newcommand{\TokyoAstro}{Department of Astronomy, Graduate School of Science, The University of Tokyo, 7-3-1 Hongo, Bunkyo-ku, Tokyo 113-0033, Japan}
+%\newcommand{\TokyoAstron}{Department of Astronomy, University of Tokyo, Tokyo 113-0033, Japan}
+\newcommand{\DARK}{Dark Cosmology Centre, Niels Bohr Institute, University of Copenhagen, Juliane Maries Vej 30, DK-2100 Copenhagen, Denmark} 
+\newcommand{\Milan}{Dipartimento di Fisica, Universit\`a  degli Studi di Milano, via Celoria 16, I-20133 Milano, Italy}
+\newcommand{\INFN}{INFN, Sezione di Bologna, Viale Berti Pichat 6/2, I-40127 Bologna, Italy}
+\newcommand{\EHU}{Fisika Teorikoa, Zientzia eta Teknologia Fakultatea, Euskal Herriko Unibertsitatea UPV/EHU}
+\newcommand{\Basque}{IKERBASQUE, Basque Foundation for Science, Alameda Urquijo, 36-5 48008 Bilbao, Spain}
+\newcommand{\Berkeley}{Department of Astronomy, University of California, Berkeley, CA 94720-3411, USA}
+\newcommand{\STScI}{Space Telescope Science Institute, 3700 San Martin Dr., Baltimore, MD 21218, USA}
+\newcommand{\Ferrara}{Dipartimento di Fisica e Scienze della Terra, Universit\`{a} degli Studi di Ferrara, via Saragat 1, I-44122, Ferrara, Italy}
+\newcommand{\INAF}{INAF, Osservatorio Astronomico di Bologna, via Ranzani 1, I-40127 Bologna, Italy}
+\newcommand{\UCSB}{Department of Physics, University of California, Santa Barbara, CA 93106-9530, USA}
+\newcommand{\SantaBarbara}{\UCSB}
+\newcommand{\Kapteyn}{Kapteyn Astronomical Institute, University of Groningen, Postbus 800, 9700 AV Groningen, the Netherlands}
+\newcommand{\WKU}{Department of Physics, Western Kentucky University, Bowling Green, KY 42101, USA}
+\newcommand{\IAP}{Institut d’Astrophysique de Paris, UMR7095 CNRS-Universit\'{e} Pierre et Marie Curie, 98bis bd Arago, F-75014 Paris, France}
+\newcommand{\ASIAA}{Institute of Astronomy and Astrophysics, Academia Sinica, P.O. Box 23-141, Taipei 10617, Taiwan}
+\newcommand{\TokyoKashiwa}{Institute for Cosmic Ray Research, The University of Tokyo, Kashiwa, Chiba 277-8582, Japan}
+\newcommand{\Munich}{University Observatory Munich, Scheinerstrasse 1, D-81679 Munich, Germany} 
+\newcommand{\KICPStanford}{Kavli Institute for Particle Astrophysics and Cosmology, Stanford University, 452 Lomita Mall, Stanford, CA 94305, USA}
+\newcommand{\Andalucia}{Instituto de Astrof\'isica de Andaluc\'ia (CSIC), E-18080 Granada, Spain}
+\newcommand{\SaoPaulo}{Instituto de Astronomia, Geof\'isica e Ci\^encias Atmosf\'ericas, Universidade de S\~ao Paulo, Cidade Universit\'aria, 05508-090, S\~ao Paulo, Brazil}
+\newcommand{\AMNH}{Department of Astrophysics, American Museum of Natural History, Central Park West and 79th Street, New York, NY 10024, USA}
+\newcommand{\NYU}{Center for Cosmology and Particle Physics, New York University, New York, NY 10003, USA}
+\newcommand{\Arizona}{Department of Astronomy, University of Arizona, Tucson, AZ 85721, USA}
+\newcommand{\Rutgers}{Department of Physics and Astronomy, Rutgers, The State University of New Jersey, Piscataway, NJ 08854, USA}
+\newcommand{\NOAO}{National Optical Astronomical Observatory, Tucson, AZ 85719, USA}
+\newcommand{\LCOGT}{Las Cumbres Observatory Global Telescope Network, 6740 Cortona Dr., Suite 102, Goleta, California 93117, USA}
+\newcommand{\IllinoisAstro}{Astronomy Department, University of Illinois at Urbana-Champaign, 1002 W.\ Green Street, Urbana, IL 61801, USA }
+\newcommand{\IllinoisPhysics}{Department of Physics, University of Illinois at Urbana-Champaign, 1110 W.\ Green Street, Urbana, IL 61801, USA }
+\newcommand{\AIP}{Leibniz-Institut f\"ur Astrophysik Potsdam (AIP), An der Sternwarte 16, 14482 Potsdam, Germany}
+\newcommand{\CEA}{Centre for Extragalactic Astronomy, Department of Physics, Durham University, Durham DH1 3LE, U.K.}
+\newcommand{\ICC}{Institute for Computational Cosmology, Durham University, South Road, Durham DH1 3LE, U.K.}
+\newcommand{\ACRU}{Astrophysics and Cosmology Research Unit, School of Mathematical Sciences, University of KwaZulu-Natal, Durban 4041, South Africa}
+\newcommand{\MPIA}{Max-Planck-Institut f{\"u}r Astrophysik, Karl-Schwarzschild-Str.~1, 85748 Garching, Germany}
+\newcommand{\Garching}{Physik-Department, Technische Universit\"at M\"unchen, James-Franck-Stra\ss{}e~1, 85748 Garching, Germany}
+%\newcommand{\Chicago}{Department of Physics, The University of Chicago, Chicago, IL 60637, USA}
+%\newcommand{\LBNL}{Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA}
+\newcommand{\Riverside}{Department of Physics and Astronomy, University of California, Riverside, CA 92521, USA}
+\newcommand{\UCRiverside}{\Riverside}
+%\newcommand{\Copenhagen}{\DARK}
+%\newcommand{\SantaCruz}{Department of Astronomy and Astrophysics, University of California, Santa Cruz, CA 92064, USA}
+%\newcommand{\NotreDame}{Department of Physics, University of Notre Dame, Notre Dame, IN 46556, USA}
+%\newcommand{\TelAviv}{Department of Astrophysics, Tel Aviv University, 69978 Tel Aviv, Israel}
+\newcommand{\CfA}{Harvard/Smithsonian Center for Astrophysics, Cambridge, MA 02138, USA}
+\newcommand{\Minnesota}{School of Physics and Astronomy, University of Minnesota, 116 Church Street SE, Minneapolis, MN 55455, USA}
+%\newcommand{\Colby}{Colby College, 4000 Mayflower Hill Dr, Waterville, ME 04901, USA}
+%\newcommand{\Kentucky}{University of Kentucky, Lexington, KY 40506}
+%\newcommand{\Durham}{Institute for Computational Cosmology, Durham University, South Road, Durham DH1 3LE, UK}
+%\newcommand{\KwaZulu}{Astrophysics and Cosmology Research Unit, School of Mathematical Sciences, University of KwaZulu-Natal, Durban 4041, South Africa}
+%\newcommand{\HongKong}{Department of Physics, The University of Hong Kong, Pokfulam Road, Hong Kong}
+%\newcommand{\Oxford}{Department of Physics, University of Oxford, Keble Road, Oxford OX1 3RH, UK}
+%\newcommand{\CRAL}{CRAL, Observatoire de Lyon, Universit\'e Lyon 1, 9 Avenue Ch. Andr\'e, F-69561 Saint Genis Laval Cedex, France}
+\newcommand{\Lyon}{Universit\'e Lyon, Univ Lyon1, Ens de Lyon, CNRS,
+  Centre de Recherche Astrophysique de Lyon UMR5574, F-69230,
+  Saint-Genis-Laval, France}
+%\newcommand{\Hebrew}{The Hebrew University, The Edmond J. Safra Campus - Givat Ram, Jerusalem 9190401, Israel}
+%\newcommand{\JPL}{Jet Propulsion Laboratory, California Institute of Technology, 4800 Oak Grove Drive, Pasadena, CA 91109, USA}
+

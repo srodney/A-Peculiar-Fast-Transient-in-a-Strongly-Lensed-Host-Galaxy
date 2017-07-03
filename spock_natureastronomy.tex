@@ -1,0 +1,130 @@
+%% Template for a preprint Letter or Article for submission
+%% to the journal Nature.
+%% Written by Peter Czoschke, 26 February 2004
+%%
+
+%Sections can only be used in Articles.  Contributions should be
+%organized in the sequence: title, text, methods, references,
+%Supplementary Information line (if any), acknowledgements,
+%interest declaration, corresponding author line, tables, figure
+%legends.
+
+
+\documentclass{nature_arxiv}
+\input{preamble_nature}
+
+%% make sure you have the nature.cls and naturemag.bst files where
+%% LaTeX can find them
+
+\bibliographystyle{naturemag}
+
+\input{TitleAndAuthors}
+
+\begin{document}
+
+\maketitle
+
+\vspace{10pt}
+\input{Abstract}
+\vspace{10pt}
+
+\makeaffil
+
+\begin{multicols}{2}
+\input{IntroductionShort}
+
+\begin{figure*}[tbp]
+\begin{center}
+\includegraphics[width=1\textwidth]{./figures/detection_image/detection_image.png}
+\caption{ \protect\input{./figures/detection_image/caption.tex}}
+\end{center}
+\end{figure*}
+
+
+\begin{figure*}[tbp]
+\begin{center}
+\includegraphics[width=1\textwidth]{./figures/spock_lightcurves/spock_lightcurves_flux}
+\caption{ \protect\input{./figures/spock_lightcurves/caption.tex}}
+\end{center}
+\end{figure*}
+
+\begin{figure*}[tbp]
+\begin{center}
+\includegraphics[width=1\columnwidth]{./figures/peakluminosity_vs_declinetime/peakluminosity_vs_declinetime}
+\caption{ \protect\input{./figures/peakluminosity_vs_declinetime/caption.tex}}
+\end{center}
+\end{figure*}
+
+\begin{figure*}[tbp]
+  \begin{center}
+    \includegraphics[width=\textwidth]{./figures/spock_critical_curves/spock_critical_curves}
+    \caption{\protect\input{./figures/spock_critical_curves/caption.tex}}
+  \end{center}
+\end{figure*}
+
+\begin{figure*}[tbp]
+  \begin{center}
+    \includegraphics[width=\textwidth]{./figures/spock_predictions/spock_predictions}
+    \caption{\protect\input{./figures/spock_predictions/caption.tex}}
+  \end{center}
+\end{figure*}
+
+
+\input{Results}
+
+\input{Discussion}
+
+\end{multicols}
+
+\begin{methods}
+%Put methods in here.  If you are going to subsection it, use
+%\verb|\subsection| commands.  Methods section should be less than
+%800 words and if it is less than 200 words, it can be incorporated
+%into the main text.
+
+\input{Observations}
+\input{LensingModels}
+\input{Xray}
+\input{LightCurves}
+\input{HostGalaxy}
+\input{LBV}
+\input{RN}
+\input{Microlensing}
+\input{ColorCurves}
+
+\end{methods}
+
+%% Supplemental figures
+\input{Supplemental}
+
+
+
+%% Put the bibliography here, most people will use BiBTeX in
+%% which case the environment below should be replaced with
+%% the \bibliography{} command.
+
+\bibliography{./bibliography/biblio}{}
+
+
+
+%% Here is the endmatter stuff: Supplementary Info, etc.
+%% Use \item's to separate, default label is "Acknowledgements"
+
+\begin{addendum}
+ \item[Supplementary Information] 
+ \item \input{Acknowledgments}
+ \item[Competing Interests] The authors declare that they have no
+competing financial interests.
+ \item[Correspondence] Correspondence and requests for materials
+should be addressed to S.A.R.~(email: srodney@sc.edu).
+\end{addendum}
+
+
+%%
+%% TABLES
+%%
+%% If there are any tables, put them here.
+%%
+\input{LongTables}
+
+\end{document}

@@ -27,6 +27,22 @@ all: clean local
 clean:
 	rm -f *.aux *.log *.bbl *.blg *.lof *.lot *.toc 
 
+
+#Generate a pdf file using a Nature latex style file
+NATUREFILE=spock_natureastronomy
+nature: 
+	pdflatex $(NATUREFILE).tex
+	bibtex $(NATUREFILE)
+	pdflatex $(NATUREFILE).tex
+	pdflatex $(NATUREFILE).tex
+	open $(NATUREFILE).pdf
+
+NATUREFILE=spock_natureastronomy
+natureupdate: 
+	pdflatex $(NATUREFILE).tex
+	open $(NATUREFILE).pdf
+
+
 #Generate a pdf file using a modified python script from et_eq
 local: 
 	local_build_withauthors.py --build-dir . --filename spock_localbuild --title-input --n-runs-after-bibtex 2

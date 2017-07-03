@@ -1,22 +1,46 @@
 \section{Results}\label{sec:Results}
 
-Photometry collected from the \HST images (Methods
-\ref{sec:Photometry}), reveals that both \spock events exhibited very
-rapid light curves (Figure \ref{fig:LightCurves}).  Both events
-reached a peak luminosity of $\sim$0.08 \microjansky, with the entire
-observable rise and fall occurring in $<20$ days.  The host galaxy for
-the \spock events is at a redshift of $z=1.0054\pm0.0002$ (Methods
-\ref{sec:Spectroscopy}), so after correcting for cosmic time dilation
-these events lasted $<$10 days in the rest frame.
+Combining the \HST imaging with gravitational lensing models of the
+\MACS0416 cluster leads to three key observables for the \spock
+events. First, both transients exhibited fast light curves, as shown
+in Figure \ref{fig:LightCurves}. We derived rise and decline
+timescales of $\sim$2--5 days in the rest frame, after accounting for
+cosmic time dilation assuming both events are at the measured redshift
+of the host galaxy ($z=1.0054\pm0.0002$).  Second, they are both more
+luminous than a classical nova, but less luminous than almost all
+supernovae (SNe) and similar explosive astrophysical transients, as
+illustrated in Figure~\ref{fig:PeakLuminosityDeclineTime}.  Each
+transient reaches a peak luminosity of roughly $10^{41}$ erg s$^{-1}$,
+corresponding to $M_V=-14$.  Third, our gravitational lensing models
+indicate that it is entirely plausible that both events arose from the
+same physical location, but it is highly unlikely that they were
+coincident in time. The lens models suggest that they were probably
+separated by 3-5 months in the rest frame
+(Table~\ref{tab:LensModelPredictions}). Taken together, these three
+lines of evidence indicate that each of the \spock events is broadly
+consistent with the expected behavior of stellar explosions (i.e.,
+they each exhibit a single isolated rise and decline in brightness),
+but neither can be trivially classified into any common category of
+explosive astrophysical transients.
+
+%Photometry collected from the \HST images (Methods
+%\ref{sec:Photometry}), reveals that both \spock events exhibited very
+%rapid light curves (Figure \ref{fig:LightCurves}).  Both events
+%reached a peak luminosity of $\sim$0.08 \microjansky, with the entire
+%observable rise and fall occurring in $<20$ days.
+%The host galaxy for
+%the \spock events is at a redshift of $z=1.0054\pm0.0002$ (Methods
+%\ref{sec:Spectroscopy}), so after correcting for cosmic time dilation
+%these events lasted $<$10 days in the rest frame.
 
 To interpret the observed light curves and the timing of these two
 events, we use seven independently constructed cluster mass models to
 determine the impact of gravitational lensing from the \MACS0416
-cluster (Methods \ref{sec:LensingModels}).  The lensing configuration
+cluste.  The lensing configuration
 that has been consistently adopted for this cluster assumes that the
 arc in which the \spock events appeared consists of two mirror images
 of the host galaxy, labeled 11.1 and 11.2 in
-Figure~\ref{fig:SpockDetectionImages} \citep{Zitrin:2013a,
+Figure~\ref{fig:SpockDetectionImages}\cite{Zitrin:2013a,
   Jauzac:2014, Johnson:2014, Richard:2014, Diego:2015a, Grillo:2015,
   Hoag:2016, Sebesta:2016, Caminha:2017}.  This implies that a single
 critical curve passes roughly mid-way between the two observed \spock
@@ -31,21 +55,21 @@ lensing critical curve (the region of theoretically infinite
 magnification) for sources at $z=1$.  The location of the critical
 curve varies significantly among the models, and is sensitive to many
 parameters that are poorly constrained.  We have explored model
-variations (Methods \ref{sec:LensModelVariations}) that adjust the
-cluster redshift and the masses of cluster member galaxies, and that
-account for the impact of lensing perturbations from galaxies along
-the line of sight.  Within a given model, variations that move a
-critical curve closer to the position of \spockone\ would drive the
-magnification of that event much higher (toward $\mu_{\rm
-  NW}\sim200$).  This generally also has the effect of moving the
-critical curve farther from \spocktwo, which would necessarily drive
-its magnification downward (toward $\mu_{\rm SE}\sim10$).  Our model
-variations also show that it is possible to make reasonable
-adjustments to the lens model parameters in order to ensure that a
-critical curve intersects both of the \spock locations.  Such lensing
-configurations can qualitatively reproduce the observed morphology of
-the \spock host galaxy, but they are disfavored by a purely
-quantitative assessment of the positional strong-lensing constraints.
+variations that adjust the cluster redshift and the masses of cluster
+member galaxies, and that account for the impact of lensing
+perturbations from galaxies along the line of sight (see Methods).
+Within a given model, variations that move a critical curve closer to
+the position of \spockone\ would drive the magnification of that event
+much higher (toward $\mu_{\rm NW}\sim200$).  This generally also has
+the effect of moving the critical curve farther from \spocktwo, which
+would necessarily drive its magnification downward (toward $\mu_{\rm
+  SE}\sim10$).  Our model variations also show that it is possible to
+make reasonable adjustments to the lens model parameters in order to
+ensure that a critical curve intersects both of the \spock locations.
+Such lensing configurations can qualitatively reproduce the observed
+morphology of the \spock host galaxy, but they are disfavored by a
+purely quantitative assessment of the positional strong-lensing
+constraints.
 
 If these two events are from a single source then one could construct
 a composite SED from rest-frame UV to optical wavelengths by combining
@@ -57,16 +81,20 @@ UV to optical flux ratio is approximately equal to the NW:SE
 magnification ratio, and any extreme asymmetry in the magnification
 would indicate a very steep slope in the SED.
 
-%\renewcommand{\arraystretch}{1.5}
-\begin{deluxetable}{lccccc}\label{tab:LensModelPredictions}
-\tablewidth{\linewidth} \tablecolumns{6} \tablecaption{Lens model
-  predictions for time delays and
-  magnifications at the observed locations of the \spock transients. \label{tab:LensModelPredictions}} 
-\tablehead{
-  \colhead{Model} &
-  \colhead{$\lvert\mu_{\rm NW}\rvert$} & \colhead{$\lvert\mu_{\rm SE}\rvert$} &  \colhead{$\lvert\mu_{11.3}\rvert$} & 
-  \colhead{$\Delta t_{\rm NW:SE}$} & \colhead{$\Delta t_{\rm NW:11.3}$} \\
-  \colhead{} & \colhead{} & \colhead{} & \colhead{} & \colhead{(days)} & \colhead{(years)}}
+\begin{deluxetable}{lccccc}
+  \label{tab:LensModelPredictions}
+  \tablewidth{\linewidth}
+  \tablecolumns{6}
+  \tablecaption{Lens model predictions for time delays and
+    magnifications at the observed locations of the \spock
+    transients. \label{tab:LensModelPredictions}}
+  \tablehead{
+    \colhead{Model} &
+    \colhead{$\lvert\mu_{\rm NW}\rvert$} & \colhead{$\lvert\mu_{\rm SE}\rvert$} &
+    \colhead{$\lvert\mu_{11.3}\rvert$} &  
+    \colhead{$\Delta t_{\rm NW:SE}$} & \colhead{$\Delta t_{\rm NW:11.3}$} \\
+    \colhead{} & \colhead{} & \colhead{} & \colhead{} & \colhead{(days)} & \colhead{(years)}}
+\startdata
 CATS &  196$^{+140}_{-53}$ & 46$^{+2}_{-1}$ & 3.3$^{+0.0}_{-0.0}$ & -1.7$^{+2.0}_{-1.9}$ & -3.7$^{+0.1}_{-0.2}$\\[0.5em]
 GLAFIC & 29$^{+43}_{-10}$ &  84$^{+103}_{-38}$ &  3.0$^{+0.2}_{-0.2}$ &  4.1$^{+5.5}_{-3.4}$ &  -5.0$^{+0.5}_{-0.6}$\\[0.5em]
 GLEE & 182$^{+203}_{-83}$ &  67$^{+31}_{-16}$ &  2.9$^{+0.1}_{-0.1}$ &  36$^{+6}_{-7}$ &  -6.1$^{+0.3}_{-0.2}$\\[0.5em]
@@ -74,15 +102,14 @@ GRALE & 13$^{+11}_{-6}$ & 12$^{+9}_{-5}$ & 3.1$^{+2.2}_{-0.9}$ & -10$^{+1}_{-7}$
 SWunited & 38$\pm8$ & 13$\pm1$ & 2.9 $\pm0.1$ & \nodata & \nodata \\[0.5em]
 WSLAP$^{+}$ & 35$\pm$20 & 30$\pm$20 & \nodata & -48$\pm$10 & 0.8  \\[0.5em]
 ZLTM & 103$^{+48}_{-40}$ & 32$^{+8}_{-10}$ & 3.5$\pm$0.3  & 43$^{+12}_{-10}$ & -3.7$\pm0.3$\\
-\enddata \tablecomments{ Each lens model is identified by the name of
-  the modeling method (described in Methods~\ref{sec:LensingModels}).
-  Time delays give the predicted delay relative to an appearance in
-  the NW host image, 11.2. Positive (negative) values indicate the NW
-  image is the leading (trailing) image of the pair.  The observed
-  time lag between the NW and SE events was
+\enddata
+\tablecomments{ Each lens model is identified by the name of the
+  modeling team or tool. Time delays give the predicted delay relative
+  to an appearance in the NW host image, 11.2. Positive (negative)
+  values indicate the NW image is the leading (trailing) image of the
+  pair.  The observed time lag between the NW and SE events was
   $\Delta t_{\rm NW:SE}=234\pm6$ days.}
 \end{deluxetable}
-%\renewcommand{\arraystretch}{1.}
 
 \subsection{Ruling Out Common Astrophysical Transients}
 
@@ -95,38 +122,36 @@ not exhibit sharp, isolated transient episodes like the \spock
 events. Stellar flares provide another very common source for optical
 transients, but the total energy released by even the most
 extreme stellar flare falls far short of the observed energy release
-from the \spock transients \citep{Balona:2012,Karoff:2016} .
+from the \spock events\cite{Balona:2012,Karoff:2016}.
 
 We can also rule out active galactic nuclei (AGN), in which brief
 transient episodes (a few days in duration) may be observed from x-ray
-to infrared wavelengths \citep[e.g.][]{Gaskell:2003}. An AGN
-explanation is disfavored by the quiescence of the \spock sources
-between the two observed episodes and the absence of any of the broad
-emission lines that are often observed in AGN.  No x-ray emitting
-point source was detected in 7 epochs of imaging from the Swift and
-Chandra x-ray space telescopes, collected from 2009 to 2014
-(Methods~\ref{sec:Xray}).  This includes the \Chandra imaging on
-August 31, 2014 (MJD=56900, \dataset[ADS/Sa.CXO#obs/16236]{Chandra
-  ObsId 16236}), which was coeval with the peak of IR emission from
-\spocktwo, observed with \HST.
+to infrared wavelengths\cite{Gaskell:2003}. An AGN explanation is
+disfavored by the quiescence of the \spock sources between the two
+observed episodes and the absence of any of the broad emission lines
+that are often observed in AGN.  No x-ray emitting point source was
+detected in 7 epochs of imaging from the Swift and Chandra x-ray space
+telescopes, collected from 2009 to 2014.  This includes the \Chandra
+imaging on August 31, 2014 (MJD=56900,
+\dataset[ADS/Sa.CXO#obs/16236]{Chandra ObsId 16236}), which was coeval
+  with the peak of IR emission from \spocktwo, observed with \HST.
 
-Many types of stellar explosions can generate isolated
-transient events, and a useful starting point for classification of
-such objects is to examine their position in the phase
-space of peak luminosity versus decline time \citep[see,
-  e.g.,][]{Kulkarni:2007}. We have inferred a range of plausible
-luminosities and decline times for the \spock events using linear
-interpolation of the observed photometry (Methods
-\ref{sec:LightCurves}), with corrections for the luminosity distance
-(assuming a standard \LCDM cosmology), and accommodating the range of
-viable lensing magnifications ($10<\mu<200$) derived from the cluster
-lens models. This results in two-dimensional constraints on \Lpk and
-the decline timescale \t2 (the time over which the transient declines
-by 2 magnitudes). The \spockone and \spocktwo events are largely
-consistent with each other, and if both events are representative of a
-single system (or a homogeneous class) then the most likely peak
-luminosity and decline time (the region with the most overlap) would
-be $L_{\rm pk}\sim10^{41}$ erg s$^{-1}$ and $t_2\sim1$ day.
+Many types of stellar explosions can generate isolated transient
+events, and a useful starting point for classification of such objects
+is to examine their position in the phase space of peak luminosity
+versus decline time\cite{Kulkarni:2007}. We have inferred a range of
+plausible luminosities and decline times for the \spock events using
+linear interpolation of the observed photometry, with corrections for
+the luminosity distance (assuming a standard \LCDM cosmology), and
+accommodating the range of viable lensing magnifications
+($10<\mu<200$) derived from the cluster lens models. This results in
+two-dimensional constraints on \Lpk and the decline timescale \t2 (the
+time over which the transient declines by 2 magnitudes). The \spockone
+and \spocktwo events are largely consistent with each other, and if
+both events are representative of a single system (or a homogeneous
+class) then the most likely peak luminosity and decline time (the
+region with the most overlap) would be $L_{\rm pk}\sim10^{41}$ erg
+s$^{-1}$ and $t_2\sim1$ day.
 
 As shown in Figure~\ref{fig:PeakLuminosityDeclineTime}, the relatively
 low peak luminosities and the very rapid rise and fall of both \spock
@@ -134,15 +159,12 @@ light curves are incompatible with all of the common categories of
 stellar explosions. This includes the thermonuclear explosions of
 white dwarf stars as Type Ia SNe, and the heterogeneous class of core
 collapse SNe.  Less well-understood classes are also ruled out, such
-as Superluminous SNe \citep{Gal-Yam:2012,Arcavi:2016}, Type Iax SNe
-\citep{Li:2003,Jha:2006a,Foley:2013a}, fast optical transients
-\citep{Drout:2014}, Ca-rich SNe
-\citep{Filippenko:2003,Perets:2011,Kasliwal:2012}, and Luminous Red
-Novae \citep[also called intermediate luminosity red
-  transients;][]{Munari:2002,Kulkarni:2007,Kasliwal:2011b}.  The spock
+as Superluminous SNe\cite{Gal-Yam:2012,Arcavi:2016}, Type Iax SNe\cite{Li:2003,Jha:2006a,Foley:2013a}, fast optical transients\cite{Drout:2014}, Ca-rich SNe\cite{Filippenko:2003,Perets:2011,Kasliwal:2012}, and Luminous Red
+Novae (also called intermediate luminosity red
+  transients)\cite{Munari:2002,Kulkarni:2007,Kasliwal:2011b}.  The spock
 light curves cannot be matched by even the most extreme examples from
 these established categories of stellar explosions, such as the faint
-and fast-declining Type Iax SN 2008ha \citep{Foley:2009a}.
+and fast-declining Type Iax SN 2008ha\cite{Foley:2009a}.
 
 The SN-like transients that come closest to matching the observed
 characteristics of the two \spock events are the ``kilonova'' class
@@ -153,24 +175,19 @@ binary. Such a NS+NS merger can drive a relativistic jet that may be
 observed as a Gamma Ray Burst (GRB) and would emit gravitational
 waves.  These may also be accompanied by a very rapid optical or
 near-infrared light curve (the kilonova component) that is driven by
-the radioactive decay of r-process elements in the ejecta
-\citep{Li:1998,Kulkarni:2005}.  Only a few credible candidates for
+the radioactive decay of r-process elements in the ejecta\cite{Li:1998,Kulkarni:2005}.  Only a few credible candidates for
 kilonova events have been observed, and no one has yet detected
-rest-frame optical light from a binary neutron star merger
-\citep{Perley:2009,Tanvir:2013}.
+rest-frame optical light from a binary neutron star merger\cite{Perley:2009,Tanvir:2013}.
 
 The .Ia class is due to He shell explosions that are expected to arise
 from AM Canum Venaticorum (AM CVn) binary star systems undergoing He
-mass transfer onto a white dwarf primary star \citep{Warner:1995,
+mass transfer onto a white dwarf primary star\cite{Warner:1995,
   Nelemans:2005,Bildsten:2007}.  The \spock light curves exhibited a
-slower rise time than is expected for a kilonova event
-\citep[e.g.,][]{Metzger:2010,Barnes:2013,Kasen:2015}, and a faster
-decline time than is anticipated for a .Ia event
-\citep[e.g.,][]{Shen:2010}.
+slower rise time than is expected for a kilonova event\cite{Metzger:2010,Barnes:2013,Kasen:2015}, and a faster
+decline time than is anticipated for a .Ia event\cite{Shen:2010}.
 
 Furthermore, the \spock observations are not
-well matched by the few examples of observed .Ia candidates
-\citep{Kasliwal:2010, Perets:2010, Poznanski:2010}.  However, there is
+well matched by the few examples of observed .Ia candidates\cite{Kasliwal:2010, Perets:2010, Poznanski:2010}.  However, there is
 enough uncertainty about the diversity of light curves generated by
 these rare explosions that we cannot dismiss these models on the
 basis of light curve characteristics alone.
@@ -178,11 +195,11 @@ basis of light curve characteristics alone.
 In addition to the incompatibility of the light curve shape, another
 problem for all of the catastrophic stellar explosions discussed so
 far is that they cannot explain the appearance of {\it repeated}
-transient events.  As shown in Table~\ref{tab:LensModelPredictions}, none of
-the \MACS0416 lens models predict an 8 month time delay between
-appearances in host galaxy images 11.1 and 11.2, suggesting that
-\spocktwo is not a time-delayed image of \spockone \citep[as was the
-  case for the 5th image of SN Refsdal;][]{Kelly:2015a,Kelly:2016a}.
+transient events.  As shown in Table~\ref{tab:LensModelPredictions},
+none of the \MACS0416 lens models predict an 8 month time delay
+between appearances in host galaxy images 11.1 and 11.2, suggesting
+that \spocktwo is not a time-delayed image of \spockone, as was the
+case for the 5th image of SN Refsdal\cite{Kelly:2015a,Kelly:2016a}.
 
 Neither the kilonova nor the .Ia explosion models can accommodate
 repeated events from the same source. The kilonova progenitor systems
@@ -193,14 +210,12 @@ making these effectively non-recurrent sources.  Thus, to reconcile
 any cataclysmic explosion model with the two observed \spock events we
 would need to invoke a highly serendipitous occurrence of two
 unrelated peculiar explosions in the same host galaxy in the same
-year. This is not unheard of for common SN classes
-\citep[e.g.][]{Poznanski:2009}, but it is difficult to quantitatively
+year. This is not unheard of for common SN classes\cite{Poznanski:2009}, but it is difficult to quantitatively
 assess the likelihood of such an occurrence for fainter rapid
-transients, as there are no measured rates of .Ia or kilonovae.  In a
-study of very fast optical transients with the Pan-STARRS1 survey,
-\citet{Berger:2013b} derived a limit of $\lesssim0.05$ Mpc$^{-3}$
+transients, as there are no measured rates of .Ia or kilonovae.  A
+study of very fast optical transients with the Pan-STARRS1 survey derived a limit of $\lesssim0.05$ Mpc$^{-3}$
 yr$^{-1}$ for transients reaching $M\approx -14$ mag on a timescale of
-$\sim$1 day.  This limit, though several orders of magnitude higher
+$\sim$1 day\citet{Berger:2013b}.  This limit, though several orders of magnitude higher
 than the constraints on novae or SNe, is sufficient to make it
 exceedingly unlikely that two unrelated fast optical transients would
 appear in the same galaxy in a single year.  Furthermore, we have
@@ -227,11 +242,11 @@ be mapped back to the same physical location at the source plane to
 within the positional accuracy of the model reconstruction (typical
 RMS$\sim$0.6\arcsec). This is supported by the fact that the host
 galaxy colors and spectral indices at each \spock location are
-indistinguishable within the uncertainties (Methods
-\ref{sec:HostGalaxy}).  Thus, to accommodate all of the observations
-of the \spock events with a single astrophysical source, we turn to
-two categories of stellar explosion that are sporadically recurrent:
-luminous blue variables (LBVs) and recurrent novae (RNe).
+indistinguishable within the uncertainties.  Thus, to accommodate all
+of the observations of the \spock events with a single astrophysical
+source, we turn to two categories of stellar explosion that are
+sporadically recurrent: luminous blue variables (LBVs) and recurrent
+novae (RNe).
 
 \subsection{Luminous Blue Variable}
 
@@ -242,19 +257,17 @@ or explosive episodes from massive stars ($>10$\Msun).\footnote{We use
   transients are variously labeled LBVs, ``SN impostors,'' or SN
   2008S-like transients.}   The class is
 exemplified by prototypical examples such as P Cygni, $\eta$ Carinae
-(\etacar), and S Doradus (S-Dor) \citep[for recent overviews of the
-  LBV class, see][]{Smith:2011b, Kochanek:2012}.  Although most giant
+(\etacar), and S Doradus (S-Dor)\cite{Smith:2011b, Kochanek:2012}.  Although most giant
 LBV eruptions have been observed to last much longer than the \spock
-events \citep{Smith:2011b}, some LBVs have exhibited repeated rapid
+events\cite{Smith:2011b}, some LBVs have exhibited repeated rapid
 outbursts that are broadly consistent with the very fast \spock light
-curves (Methods \ref{sec:LBVlightcurves}). Because of this commonly
+curves (see Supplemental Information). Because of this commonly
 seen stochastic variability, the LBV hypothesis does not have any
 trouble accounting for the \spock events as two separate episodes.
 
 Two well-studied LBVs that provide a plausible match to the observed
-\spock events are ``SN 2009ip'' \citep{Maza:2009} and NGC3432-LBV1
-\citep{Pastorello:2010}.  Both exhibited multiple brief transient
-episodes over a span of months to years \citep[e.g.,][]{Miller:2009,
+\spock events are ``SN 2009ip''\cite{Maza:2009} and NGC3432-LBV1\cite{Pastorello:2010}.  Both exhibited multiple brief transient
+episodes over a span of months to years\cite{Miller:2009,
   Li:2009, Berger:2009, Drake:2010, Pastorello:2010}.  Unfortunately,
 for these outbursts we have only upper limits on the decline
 timescale, $t_2$, due to the relatively sparse photometric sampling.
@@ -276,8 +289,7 @@ this class as a possible explanation for the \spock system.
 To explore some of the physical implications of an LBV
 classification for the two \spock events, we first make a rough
 estimate of the total radiated energy, which can be computed using the
-decline timescale $t_2$ and the peak luminosity $L_{\rm pk}$ following
-\citet{Smith:2011b}:
+decline timescale $t_2$ and the peak luminosity $L_{\rm pk}$ following\cite{Smith:2011b}:
 
 \begin{equation}
   \label{eqn:Erad}
@@ -285,8 +297,7 @@ decline timescale $t_2$ and the peak luminosity $L_{\rm pk}$ following
 \end{equation}
 
 \noindent where $\zeta$ is a dimensionless factor of order unity that depends on the
-precise shape of the light curve.\footnote{Note that
-  \citet{Smith:2011b} used $t_{1.5}$ instead of $t_2$, which amounts
+precise shape of the light curve.\footnote{Note that \cite{Smith:2011b} used $t_{1.5}$ instead of $t_2$, which amounts
   to a different light curve shape term, $\zeta$.}  Adopting
 \Lpk$\sim10^{41}$ erg s$^{-1}$ and \t2$\sim$1 day (as shown in
 Figure~\ref{fig:PeakLuminosityDeclineTime}), we find that the total
@@ -299,23 +310,22 @@ does fall well within the range of plausible values for the total
 radiated energy of a major LBV outburst.
 
 The precise physical mechanism for LBV outbursts is still not fully
-understood \citep[e.g.][]{Smith:2006,Woosley:2007,Dessart:2010}, but
-the canonical model is that LBV transient events are the optical
-signature of an eruptive mass loss episode.  If this applies to the
-\spock transients, then the energy budget must also include a
-substantial amount of kinetic energy imparted to the ejected gas
-shell. Without spectroscopic information from the \spock transients we
-cannot place any realistic estimate on the kinetic
-energy. Nevertheless, we can take the radiated energy as a rough lower
-limit on the total energy release and consider what timescale would be
-required for a massive star to build up that amount of energy (Methods
-\ref{sec:LBVbuildup}). This approach assumes that the energy released
-in an LBV eruption is generated slowly in the stellar interior and is
-in some way ``bottled up'' by the stellar envelope, before being
-released in a rapid mass ejection.  By assuming that the build-up
-timescale is comparable to the rest-frame time between the two
-observed events, we estimate a quiescent luminosity of
-$L_{\rm qui}\sim10^{39.5}$~erg~s$^{-1}$ ($M_V\sim-10$).  This value is fully
+understood\cite{Smith:2006,Woosley:2007,Dessart:2010}, but the
+canonical model is that LBV transient events are the optical signature
+of an eruptive mass loss episode.  If this applies to the \spock
+transients, then the energy budget must also include a substantial
+amount of kinetic energy imparted to the ejected gas shell. Without
+spectroscopic information from the \spock transients we cannot place
+any realistic estimate on the kinetic energy. Nevertheless, we can
+take the radiated energy as a rough lower limit on the total energy
+release and consider what timescale would be required for a massive
+star to build up that amount of energy. This approach assumes that the
+energy released in an LBV eruption is generated slowly in the stellar
+interior and is in some way ``bottled up'' by the stellar envelope,
+before being released in a rapid mass ejection.  By assuming that the
+build-up timescale is comparable to the rest-frame time between the
+two observed events, we estimate a quiescent luminosity of $L_{\rm
+  qui}\sim10^{39.5}$~erg~s$^{-1}$ ($M_V\sim-10$).  This value is fully
 consistent with the expected range for LBV progenitor stars (e.g.,
 \etacar has $M_V\sim-12$ and the faintest known LBV progenitors such
 as SN 2010dn have $M_V\sim-6$).
@@ -334,12 +344,12 @@ and repeat after a period of months or years.  In a recurrent nova
 
 The light curves of many RN systems in the Milky Way are similar in
 shape to the \spock episodes, exhibiting a sharp rise ($<10$ days in
-the rest-frame) and a similarly rapid decline (see Methods section
-\ref{sec:RNLightCurves}).  This is reflected in
+the rest-frame) and a similarly rapid decline (see Supplemental
+Information).  This is reflected in
 Figure~\ref{fig:PeakLuminosityDeclineTime}, where novae are
 represented by a grey band that traces the empirical constraints on
 the maximum magnitude - rate of decline (MMRD) relation for classical
-novae \citep{DellaValle:1995, Downes:2000, Shafter:2011,
+novae\cite{DellaValle:1995, Downes:2000, Shafter:2011,
   Kasliwal:2011a}.
 
 The RN model can provide a natural explanation for having two separate
@@ -348,11 +358,9 @@ observed \spock events can be attributed to two distinct eruptions
 from the same RN system.  However, the recurrence timescale for \spock
 in the rest-frame is $120\pm30$ days, which would be a singularly
 rapid recurrence period for a RN system.  All RNe in our own galaxy
-have recurrence timescales ranging from 10--98 years
-\citep{Schaefer:2010}.  The fastest measured recurrence timescale
+have recurrence timescales ranging from 10--98 years\cite{Schaefer:2010}.  The fastest measured recurrence timescale
 belongs to M31N 2008-12a, which has exhibited a new outburst every
-year from 2008-2016
-\citep{Tang:2014,Darnley:2014,Darnley:2015,Henze:2015,Henze:2015a,Darnley:2016}. Although
+year from 2008-2016\cite{Tang:2014,Darnley:2014,Darnley:2015,Henze:2015,Henze:2015a,Darnley:2016}. Although
 this M31 record-holder demonstrates that very rapid recurrence is
 possible, classifying \spock as a RN would still require a very
 extreme mass transfer rate to accommodate the $<1$ year recurrence.
@@ -361,7 +369,7 @@ A major concern with the RN hypothesis is that the two \spock events
 are substantially brighter than all known novae -- perhaps by as much
 as 2 orders of magnitude.  This is exacerbated by the observational
 and theoretical evidence indicating that rapid-recurrence novae have
-less energetic eruptions \citep[e.g.][]{Yaron:2005}.  One might
+less energetic eruptions\cite{Yaron:2005}.  One might
 attempt to reconcile the \spock luminosity more comfortably with the
 nova class by assuming a significant lensing magnification for one of
 the two events. This would drive down the intrinsic luminosity,
@@ -374,10 +382,9 @@ the other \spock position. This would make that second event {\it more
 
 The combination of a rapid recurrence timescale and unusually high
 peak luminosity for the \spock events is at odds with theoretical
-expectations and empirical constraints for RNe (Methods
-\ref{sec:RNLuminosityRecurrence}). Although the RN model is not
-strictly ruled out, we can deduce that if the \spock transients are
-caused by a single RN system, then that progenitor system would be
+expectations and empirical constraints for RNe. Although the RN model
+is not strictly ruled out, we can deduce that if the \spock transients
+are caused by a single RN system, then that progenitor system would be
 among the most extreme white dwarf binary systems yet known.
 
 % As discussed above, modified lens models may allow for two critical
@@ -407,10 +414,10 @@ potential, the amplification of the source flux would increase
 (decrease) with a characteristic $t^{-1/2}$ profile as it moves toward
 (away from) the caustic. This slowly evolving light curve then
 transitions to a very sharp decline (rise) when the star has moved to
-the other side of the caustic \citep{Schneider:1986,
+the other side of the caustic\cite{Schneider:1986,
   MiraldaEscude:1991}.  With a more complex lens comprising many
 compact objects, the light curve would exhibit a superposition of many
-such sharp peaks \citep{Lewis:1993}.
+such sharp peaks\cite{Lewis:1993}.
 
 The peculiar transient {\it Icarus}, observed behind the Hubble
 Frontier Fields cluster MACS J1149.6+2223, has been proposed as the
@@ -428,7 +435,7 @@ factor of $\sim10^5$ to become visible as a transient caustic crossing
 event.  On this basis the \spock host galaxy images are suitably
 positioned for caustic crossing transients, as they are seen through a
 relatively high density of intracluster stars---comparable to that
-observed for the {\it Icarus} transient (Methods \ref{sec:ICL}).
+observed for the {\it Icarus} transient.
 
 The characteristic timescale of a canonical caustic crossing event
 would be on the order of hours or days (Methods
@@ -440,7 +447,7 @@ crossing transient will be roughly constant.  Using simplistic linear
 interpolations of the observed light curves (Methods
 \ref{sec:LightCurves}) we find that the inferred color curves for both
 \spock events are marginally consistent with this expectation of an
-unchanging color (Methods \ref{sec:ColorCurves}).
+unchanging color.
 
 In the baseline lensing configuration adopted above---where a single
 critical curve subtends the \spock host galaxy arc---these events
@@ -452,7 +459,7 @@ images, the lensed galaxy arc is made up of many more images of the
 host, with multiple critical curves subtending the arc where the
 \spock events appeared.  For the GLAFIC and WSLAP models, this
 requires adjusting the assumed masses of cluster galaxies near the
-\spock host by $30-60\%$ (Methods~\ref{sec:LensModelVariations}).
+\spock host by $30-60\%$.
 With this adjustment, both models can reproduce the observed
 morphology of the HFF14Spo host galaxy as a smooth, unbroken arc.
 These model realizations imply magnifications on the order of
