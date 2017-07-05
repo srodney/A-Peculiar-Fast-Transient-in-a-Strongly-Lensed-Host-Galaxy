@@ -147,7 +147,7 @@
 %    \sffamily\noindent\textbf{Figure \arabic{figure}}\hspace{1em}#2}
 %    }
 
-\renewenvironment{table}{\@float{table}[p]\sffamily}{\end@float}
+%\renewenvironment{table}{\@float{table}[p]\sffamily}{\end@float}
 
 %% ignore all \includegraphics commands in the document
 %\AtBeginDocument{\let\includegraphics\NAT@ignore}
