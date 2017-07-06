@@ -38,4 +38,7 @@ Microlensing.tex
 figures/spock_colorcurves_observerframe/spock_colorcurves_observerframe.png
 ColorCurves.tex
 
+figures/hff_lensed_galaxies/hff_lensed_galaxies.pdf
+Rates.tex
+
 LongTables.tex

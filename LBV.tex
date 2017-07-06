@@ -1,19 +1,42 @@
 \subsection{Luminous Blue Variable Light Curve Comparison}
 \label{sec:LBVlightcurves}
 
-Figure~\ref{fig:LBVLightCurveComparison} presents a direct comparison
-of the observed \spock light curves against the light curves of the
-two LBVs that have well-studied rapid eruptions: SN 2009ip and
-NGC3432-LBV1. The brief outbursts of these LBVs have been less finely
-sampled than the two \spock events, but the available data show a wide
-variety of rise and decline times, even for a single object over a
-relatively narrow time window of a few months.
-
+Extended Data Fig.~\ref{fig:LBVLightCurveComparison} presents a direct
+comparison of the observed \spock light curves against the light
+curves of the two LBVs that have well-studied rapid eruptions: SN
+2009ip and NGC3432-LBV1. The brief outbursts of these LBVs have been
+less finely sampled than the two \spock events, but the available data
+show a wide variety of rise and decline times, even for a single
+object over a relatively narrow time window of a few months.
 
 
 \subsection{LBV Build-up timescale}\label{sec:LBVbuildup}
 
-The ``build-up'' timescale \citep{Smith:2011b} matches the radiative
+To explore some of the physical implications of an LBV classification
+for the two \spock events, we first make a rough estimate of the total
+radiated energy, which can be computed using the decline timescale
+$t_2$ and the peak luminosity $L_{\rm pk}$:
+
+\begin{equation}
+  \label{eqn:Erad}
+  E_{\rm rad} = \zeta \t2 \Lpk,
+\end{equation}
+
+\noindent where $\zeta$ is a dimensionless factor of order unity that
+depends on the precise shape of the light curve\cite{Smith:2011b}. Note that
+ earlier work\cite{Smith:2011b} has used $t_{1.5}$ instead of $t_2$, which amounts to
+  a different light curve shape term, $\zeta$.  Adopting
+\Lpk$\sim10^{41}$ erg s$^{-1}$ and \t2$\sim$1 day (as shown in
+Figure~\ref{fig:PeakLuminosityDeclineTime}), we find that the total
+radiated energy is $E_{\rm rad}\sim10^{46}$ erg.  A realistic range
+for this estimate would span $10^{44}<E_{\rm rad}<10^{47}$ erg, due to
+uncertainties in the magnification, bolometric luminosity correction,
+decline time, and light curve shape. These uncertainties
+notwithstanding, our estimate falls well within the range of
+plausible values for the total radiated energy of a major LBV
+outburst.
+
+The ``build-up'' timescale\citep{Smith:2011b} matches the radiative
 energy released in an LBV eruption event with the radiative energy
 produced during the intervening quiescent phase:
 
