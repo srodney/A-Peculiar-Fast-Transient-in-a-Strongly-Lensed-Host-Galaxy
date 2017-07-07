@@ -1,20 +1,5 @@
-%% Template for a preprint Letter or Article for submission
-%% to the journal Nature.
-%% Written by Peter Czoschke, 26 February 2004
-%%
-
-%Sections can only be used in Articles.  Contributions should be
-%organized in the sequence: title, text, methods, references,
-%Supplementary Information line (if any), acknowledgements,
-%interest declaration, corresponding author line, tables, figure
-%legends.
-
-
 \documentclass{nature_arxiv}
 \input{preamble_nature}
-
-%% make sure you have the nature.cls and naturemag.bst files where
-%% LaTeX can find them
 
 \bibliographystyle{naturemag}
 
@@ -30,17 +15,17 @@
 
 \makeaffil
 
-\begin{multicols}{2}
+%\begin{multicols}{2}
 \input{IntroductionShort}
+\input{Figures}
 
 \input{Results}
 
 \input{Discussion}
 
-\end{multicols}
+%\end{multicols}
 
-\input{Figures}
-
+\clearpage
 \begin{methods}
  %Put methods in here.  If you are going to subsection it, use
  %\verb|\subsection| commands.  Methods section should be less than
@@ -51,7 +36,6 @@
  \input{LensingModels}
  \input{Xray}
  \input{LightCurves}
- \input{HostGalaxy}
  \input{LBV}
  \input{RN}
  \input{Microlensing}
@@ -60,9 +44,6 @@
  
 \end{methods}
 
-% Supplemental figures
-\input{Supplemental}
-
 
 %% Put the bibliography here, most people will use BiBTeX in
 %% which case the environment below should be replaced with
@@ -70,13 +51,11 @@
 
 \bibliography{./bibliography/biblio}{}
 
-
-
 %% Here is the endmatter stuff: Supplementary Info, etc.
 %% Use \item's to separate, default label is "Acknowledgements"
 
 \begin{addendum}
- %\item[Supplementary Information] 
+ \item[Supplementary Information] Supplementary figures, tables and notes are included at the end of this document.
  \item \input{Acknowledgments}
  % \item[Competing Interests] The authors declare that they have no
 % competing financial interests.
@@ -84,12 +63,16 @@
 should be addressed to S.A.R.~(email: srodney@sc.edu).
 \end{addendum}
 
-
 %%
 %% TABLES
 %%
 %% If there are any tables, put them here.
 %%
-\input{LongTables}
+
+% Supplemental figures, notes and tables
+\clearpage
+\begin{supplementary}
+\input{Supplementary}
+\end{supplementary}
 
 \end{document}

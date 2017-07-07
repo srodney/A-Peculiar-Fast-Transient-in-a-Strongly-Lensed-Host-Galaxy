@@ -49,7 +49,11 @@
 
 %% make citations be superscripts, taken from citesupernumber.sty
 \def\@cite#1#2{$^{\mbox{\scriptsize #1\if@tempswa , #2\fi}}$}
-
+\newcommand{\citeref}[1]{[Ref.~{\citenum{#1}}]}
+\providecommand\citealt{\cite}
+\providecommand\citep{\cite}
+\providecommand\citet{\cite}
+  
 %% Some style parameters
 \setlength{\parindent}{0.39in}
 \setlength{\parskip}{1pt}
@@ -103,6 +107,17 @@
     \section*{Methods}%
     \setlength{\parskip}{12pt}%
     }{}
+
+%% Define the Supplemental Information environment.  Use \subsection to separate.
+\newenvironment{supplementary}{%
+    \section*{Supplementary Information}%
+    \setlength{\parskip}{12pt}%
+    \renewcommand{\figurename}{Supplementary Figure}
+    \renewcommand{\tablename}{Supplementary Table}
+    \setcounter{figure}{0}
+    \setcounter{table}{0}
+}{}
+
 
 %% No heading for References section, but eat up the extra space from \section command
 \renewcommand\refname{\vspace{-48pt}\setlength{\parskip}{12pt}}

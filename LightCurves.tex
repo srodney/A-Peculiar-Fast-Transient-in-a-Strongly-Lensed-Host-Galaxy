@@ -1,12 +1,12 @@
-\subsection{Light Curve Fitting}\label{sec:LightCurves}
+\subsection{Light Curve Fitting.}\label{sec:LightCurves}
 
 Due to the rapid decline timescale, no observations were collected for
 either event that unambiguously show the declining portion of the
 light curve. Therefore, we must make some assumptions for the shape of
 the light curve in order to quantify the peak luminosity and the
 corresponding timescales for the rise and the decline.  We first
-approach this with a simplistic model that is piece-wise linear in
-magnitude vs time.  Figure~\ref{fig:LinearLightCurveFits} shows
+approach this with a simplistic model that is piecewise linear in
+magnitude vs time. Supplementary Figure~\ref{fig:LinearLightCurveFits} shows
 examples of the resulting fits for the two events.  For each fit we
 use only the data collected within 3 days of the brightest observed
 magnitude, which allows us to fit a linear rise separately for the
@@ -18,26 +18,26 @@ the following procedure:
 \begin{enumerate}
 \item make an assumption for the date of peak, $t_{\rm pk}$;
 \item measure the peak magnitude at $t_{\rm pk}$ from the linear fit
-  to the rising light curve data;
+  to the rising light-curve data;
 \item assume the source reaches a minimum brightness (maximum
   magnitude) of 30 AB mag at the epoch of first observation after the
   peak;
 \item draw a line for the declining light curve between the assumed
   peak and the assumed minimum brightness;
-\item use that declining light curve line to measure the timescale for
-  the event to drop by 2 magnitudes, $t_2$;
+\item use that declining light-curve line to measure the timescale for
+  the event to drop by 2 mag, $t_2$;
 \item make a new assumption for $t_{\rm pk}$ and repeat.
 \end{enumerate}
 
-As shown in Figure~\ref{fig:LinearLightCurveFits}, the resulting
-piece-wise linear fits are simplistic, but nevertheless approximately
+As shown in Supplementary Figure~\ref{fig:LinearLightCurveFits}, the resulting
+piecewise linear fits are simplistic, but nevertheless approximately
 capture the observed behavior for both events.  Furthermore, since
 this toy model is not physically motivated, it allows us to remain
 agnostic for the time being as to the astrophysical source(s) driving
 these transients.  From these fits we can see that \spockone most
 likely reached a peak magnitude between 25 and 26.5 AB mag in both
 F814W and F435W, and had a decline timescale $t_2$ of less than 2 days
-in the rest-frame. The observations of \spocktwo provide less
+in the rest frame. The observations of \spocktwo provide less
 stringent constraints, but we see that it had a peak magnitude between
 23 and 26.5 AB mag in F160W and exhibited a decline time of less than
 seven days.  These fits also illustrate the generic fact that a higher
@@ -52,13 +52,12 @@ that to a luminosity (e.g., $\nu L_\nu$ in erg s$^{-1}$) by first
 correcting for the luminosity distance assuming a standard \LCDM
 cosmology, and then accounting for an assumed lensing magnification,
 $\mu$.  The range of plausible lensing magnifications ($10<\mu<100$)
-is derived from the union of our six independent lens models (Methods,
-Figure~\ref{fig:LensModelContours}).  This results in a grid of
-possible peak luminosities for each event as a function of
-magnification and time of peak.  As we are using linear light curve
-fits, the assumed time of peak is equivalent to an assumption for the
-decline time, which we quantify as $t_2$, the time over which the
-transient declines by 2 magnitudes.
+is derived from the union of our seven independent lens models.  This
+results in a grid of possible peak luminosities for each event as a
+function of magnification and time of peak.  As we are using linear
+light curve fits, the assumed time of peak is equivalent to an
+assumption for the decline time, which we quantify as $t_2$, the time
+over which the transient declines by 2 magnitudes.
 
 
 

@@ -1,37 +1,36 @@
-\subsection{Discovery}\label{sec:Discovery}
+\subsection{Discovery.}\label{sec:Discovery}
 
 The transient \spock\ was discovered in \HST imaging collected as part
-of the Hubble Frontier Fields (HFF) survey (HST-PID:13496, PI:Lotz), a
-multi-cycle program observing 6 massive galaxy clusters and associated
-``blank sky'' parallel fields.  Several \HST observing programs have
-provided additional observations supplementing the core HFF program.
-One of these is the FrontierSN program (HST-PID:13386, PI:Rodney),
-which aims to identify and study explosive transients found in the HFF
-and related programs.  The FrontierSN team discovered \spock\ in two
-separate HFF observing campaigns on the galaxy cluster \MACS0416.  The
-first was an imaging campaign in January, 2014 during which the
-MACS0416 cluster field was observed in the F435W, F606W, and F814W
-optical bands using the Advanced Camera for Surveys Wide Field Camera
-(ACS-WFC).  The second concluded in August, 2014, and imaged the
-cluster with the infrared detector of \HST's Wide Field Camera 3
+of the Hubble Frontier Fields (HFF) survey (HST-PID: 13496, PI: Lotz),
+a multi-cycle program observing 6 massive galaxy clusters and
+associated ``blank sky'' parallel fields\cite{Lotz:2017}.  Several
+\HST observing programs have provided additional observations
+supplementing the core HFF program.  One of these is the FrontierSN
+program (HST-PID: 13386, PI: Rodney), which aims to identify and study
+explosive transients found in the HFF and related
+programs\citet{Rodney:2015a}.  The FrontierSN team discovered
+\spock\ in two separate HFF observing campaigns on the galaxy cluster
+\MACS0416.  The first was an imaging campaign in January, 2014 during
+which the MACS0416 cluster field was observed in the F435W, F606W, and
+F814W optical bands using the Advanced Camera for Surveys Wide Field
+Camera (ACS-WFC).  The second concluded in August, 2014, and imaged
+the cluster with the infrared detector of \HST's Wide Field Camera 3
 (WFC3-IR) using the F105W, F125W, F140W, and F160W bands.
 
 To discover transient sources, the FrontierSN team processes each new
-epoch of \HST data through a difference imaging
-pipeline,\footnote{\url{https://github.com/srodney/sndrizpipe}} using
+epoch of \HST data through a difference-imaging
+pipeline (\url{https://github.com/srodney/sndrizpipe}), using
 archival \HST images to provide reference images (templates) which are
 subtracted from the astrometrically registered HFF images. In the case
 of MACS0416, the templates were constructed from images collected as
 part of the Cluster Lensing And Supernova survey with Hubble (CLASH,
-HST-PID:12459, PI:Postman). The resulting difference images are
+HST-PID:12459, PI:Postman)\cite{Postman:2012}. The resulting difference images are
 visually inspected for new point sources, and any new transients of
-interest (primarily supernovae, SNe) are followed up with additional
-\HST imaging or ground-based spectroscopic observations as needed.  For
-a more complete description of the operations of the FrontierSN
-program\citet{Rodney:2015a}.
+interest (primarily SNe) are monitored with additional
+\HST imaging or ground-based spectroscopic observations as needed.
 
 
-\subsection{Photometry}\label{sec:Photometry}
+\subsection{Photometry.}\label{sec:Photometry}
 
 The follow-up observations for \spock\ included \HST imaging
 observations in infrared and optical bands using the WFC3-IR and
@@ -44,15 +43,16 @@ PSF model was defined using \HST observations of the G2V standard star
 P330E, observed in a separate calibration program.  A separate PSF
 model was defined for each filter, but owing to the long-term
 stability of the \HST PSF we used the same model in all epochs.  All
-of the aperture and PSF fitting photometry was carried out using the
-{\tt PythonPhot} software package\citep{Jones:2015}.\footnote{\url{https://github.com/djones1040/PythonPhot}}
+of the aperture and PSF-fitting photometry was carried out using the
+{\tt PythonPhot} software package
+(\url{https://github.com/djones1040/PythonPhot})\citep{Jones:2015}.
 
 
-\subsection{Host Galaxy Spectroscopy}\label{sec:Spectroscopy}
+\subsection{Host-Galaxy Spectroscopy.}\label{sec:Spectroscopy}
 
 Spectroscopy of the \spock\ host galaxy was collected using three
 instruments on the Very Large Telescope (VLT).  Observations with the
-VLT's X-shooter cross-dispersed echelle spectrograph\citep{Vernet:2011} were taken on October 19th, 21st and 23rd, 2014
+VLT's X-shooter cross-dispersed echelle spectrograph\citep{Vernet:2011} were taken on October 19, 21 and 23, 2014
 (Program 093.A-0667(A), PI: J. Hjorth) with the slit centered on the
 position of \spocktwo.  The total integration time was 4.0 hours for
 the NIR arm of X-shooter, 3.6 hours for the VIS arm, and 3.9 hours for
@@ -75,12 +75,12 @@ redshifts over 600 arcmin$^2$ in the \macs0416
 field\citep{Grillo:2015,Balestra:2016}.  These massively multi-object
 observations could potentially have provided confirmation of the
 redshift of the \spock host galaxy with separate spectral line
-identifications in each of the three host galaxy images.  For the
+identifications in each of the three host-galaxy images.  For the
 \macs0416 field the CLASH-VLT program collected 1 hour of useful
 exposure time in good seeing conditions with the Low Resolution Blue
 grism.  Unfortunately, the wavelength range of this grism (3600-6700
 \AA) does not include any strong emission lines for a source at
-z=1.0054, and the signal-to-noise (S/N) was not sufficient to provide
+$z=1.0054$, and the signal-to-noise ratio (S/N) was not sufficient to provide
 any clear line identifications for the three images of the \spock host
 galaxy.
 
@@ -92,8 +92,7 @@ redshift of the host galaxy with clear detection of the
 \forbidden{O}{ii} doublet.  Importantly, since MUSE is an integral
 field spectrograph, these observations also provided a confirmation of
 the redshift of the third image of the host galaxy, 11.3, with a
-matching \forbidden{O}{ii} line at the same wavelength
-(\citealt{Caminha:2017}, Richard et al. in prep).
+matching \forbidden{O}{ii} line at the same wavelength\cite{Caminha:2017}.
 
 A final source of spectroscopic information relevant to \spock is the
 Grism Lens Amplified Survey from Space (GLASS; PID:
@@ -104,6 +103,6 @@ galaxies down to a magnitude limit $H<23$.  As with the VLT VIMOS
 data, the three sources identified as images of the \spock host galaxy
 are too faint in the GLASS data to provide any useful line
 identifications.  There are also no other sources in the GLASS
-redshift catalog\footnote{\url{http://glass.astro.ucla.edu/}} that
-have a spectroscopic redshift consistent with z=1.0054.
+redshift catalog (\url{http://glass.astro.ucla.edu/}) that
+have a spectroscopic redshift consistent with $z=1.0054$.
 
