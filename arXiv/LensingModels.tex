@@ -1,0 +1,78 @@
+\subsection{Gravitational Lens Models.}\label{sec:LensingModels}
+
+
+%That same transient episode would have appeared at
+%different times in host galaxy images 11.1 and 11.3, due primarily to
+%the \citet{Shapiro:1964} delay.  The $\Delta t_{\rm NW:SE}$ column in
+%Table~\ref{tab:LensModelPredictions} gives the model predictions for
+%the number of days between the appearance of the \spockone\ event in
+%the NW host image (11.2) and the date when it should have been
+%observable in the adjacent SE host image (11.1).  The opposite value
+%would give the time difference between the August 2014
+%\spocktwo\ event and its expected appearance in host image 11.2.
+%Table~\ref{tab:LensModelPredictions} also reports the predicted time
+%delay (in years) between appearance in the NW host image 11.2 and the
+%more widely separated image 11.3.
+
+The seven lens models used to provide estimates of the plausible range
+of magnifications and time delays are as follows:
+
+\begin{itemize}
+\item{\it CATS:} The model of \citeref{Jauzac:2014}, version 4.1,
+  generated with the {\tt LENSTOOL} software
+  (\url{http://projects.lam.fr/repos/lenstool/wiki})\citep{Jullo:2007}
+  using strong lensing constraints.  This model parameterizes cluster
+  and galaxy components using pseudo-isothermal elliptical mass
+  distribution (PIEMD) density profiles\citep{Kassiola:1993,
+    Limousin:2007}.
+\item{\it GLAFIC:} The model of \citeref{Kawamata:2016}, built using
+  the {\tt GLAFIC} software
+  (\url{http://www.slac.stanford.edu/~oguri/glafic/})\citep{Oguri:2010b}
+  with strong-lensing constraints. This model assumes simply
+  parametrized mass distributions, and model parameters are
+  constrained using positions of more than 100 multiple images.
+\item{\it GLEE:} A new model built using the {\tt GLEE}
+  software\citep{Suyu:2010b, Suyu:2012} with the same strong-lensing
+  constraints used in \citeref{Caminha:2017}, representing mass
+  distributions with simply parameterized mass profiles.
+\item{\it GRALE:} A free-form, adaptive grid model developed using
+  the GRALE software tool\citep{Liesenborgs:2006, Liesenborgs:2007,
+    Mohammed:2014, Sebesta:2016}, which implements a genetic algorithm
+  to reconstruct the cluster mass distribution with hundreds to
+  thousands of projected Plummer\citet{Plummer:1911} density profiles.
+\item{\it SWUnited:} The model of \citeref{Hoag:2016}, built using the
+  {\tt SWUnited} modeling method\citep{Bradac:2005, Bradac:2009}, in
+  which an adaptive pixelated grid iteratively adapts the mass
+  distribution to match both strong- and weak-lensing constraints.
+  Time delay predictions are not available for this model.
+\item{\it WSLAP+:} Created with the {\tt WSLAP+} software
+  (\url{http://www.ifca.unican.es/users/jdiego/LensExplorer})\citep{Sendra:2014}:
+  Weak and Strong Lensing Analysis Package plus member galaxies (Note:
+  no weak-lensing constraints were used for this \MACS0416 model).
+\item{\it ZLTM:} A model with strong- and weak-lensing constraints,
+  built using the ``light-traces-mass'' (LTM)
+  methodology\citep{Zitrin:2009a, Zitrin:2015}, first presented for
+  \MACS0416 in \citeref{Zitrin:2013a}.
+\end{itemize}
+
+Early versions of the {\it SWUnited}, {\it CATS}, {\it ZLTM} and {\it
+  GRALE} models were originally distributed as part of the Hubble
+Frontier Fields lens modeling project
+(\url{https://archive.stsci.edu/prepds/frontier/lensmodels/}), in
+which models were generated based on data available before the start
+of the HFF observations to enable rapid early investigations of lensed
+sources. The versions of these models applied here are updated to
+incorporate additional lensing constraints.  In all cases the lens
+modelers made use of strong-lensing constraints (multiply imaged
+systems and arcs) derived from \HST imaging collected as part of the
+CLASH program\cite{Postman:2012}). These
+models also made use of spectroscopic redshifts in the cluster
+field\cite{Mann:2012, Christensen:2012, Grillo:2015, Caminha:2017}.
+Input weak-lensing constraints were derived from data collected at the
+Subaru Telescope by PI K. Umetsu (in prep) and archival imaging.
+%\citet{Priewe:2016} provides a more complete
+%description of the methodology of model and a comparison of the
+%magnification predictions and uncertainties across the entire
+%\macs0416 field.
+
+

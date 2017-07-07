@@ -1,0 +1,110 @@
+\subsection{Host Galaxy}\label{sec:HostGalaxy}
+
+To examine whether the two transients originated from the same
+physical location in the source plane, we looked for differences in
+the properties of the \spock host galaxy at the location of each
+event.  We first used the technique of ``pixel-by-pixel'' SED
+fitting\cite{Hemmati:2014} to determine rest-frame colors and stellar
+properties in a single resolution element of the \HST imaging data.
+For this purpose we used the deepest possible stacks of \HST images,
+comprising all available data except those images where the transient
+events were present.  The resulting maps of stellar population
+properties are shown in Supplementary Figure~\ref{fig:HostProperties}.
+Supplementary Table~\ref{tab:HostProperties} reports measurements of
+the three derived stellar population properties (color, mass, age)
+from host images 11.1, 11.2 and 11.3.  In 11.1 and 11.2 these
+measurements were extracted from the central pixel at the location of
+each of the two \spock events.  The lensing magnification here ranges
+from $\mu=10$ to 200, corresponding to a size on the source plane
+between 6 and 600 pc$^2$.  For host image 11.3 we report the stellar
+population properties derived from the pixel at the center of the
+galaxy, because the lens models do not have sufficient precision to
+map the \spock locations to specific positions in image 11.3.  With a
+magnification of $\sim$3 to 5, this extraction region covers roughly
+2000 to 6000 pc$^2$.
+
+The reported uncertainties for these derived stellar properties in
+Table~\ref{tab:HostProperties} reflect only the measurement errors
+from the SED fitting, and do not attempt to quantify potential
+systematic biases.  Such biases could arise, for example, from color
+differences in the background light, which is dominated by the cluster
+galaxies and varies significantly across the \MACS0416 field.  Such a
+bias might shift the absolute values of the parameter scales for any
+given host image (e.g., making the galaxy as a whole appear bluer,
+more massive, and younger). However, the gradients across any single
+host image are unlikely to be driven primarily by such systematics.
+
+Supplementary Figure~\ref{fig:HostProperties} and Supplementary
+Table~\ref{tab:HostProperties} show that the measured values of the
+color, stellar mass, and age at the two \spock locations are mutually
+consistent. Thus, it is plausible to assume that the two positions map
+back to the same physical location at the source plane.  Comparing
+those two locations to the center of the galaxy as defined in image
+11.3, we see only a mild tension in the rest frame $U-V$ color. This
+comparison therefore cannot quantitatively rule out the possibility
+that the two transient events are located at the center of the
+galaxy. However, the maps shown in Supplementary Figure~\ref{fig:HostProperties} do
+show a gradient in both $U-V$ color and stellar age. For both images
+11.1 and 11.2 the bluest and youngest stars ($U-V\approx0.3$,
+$\tau\approx280$ Myr) are localized in knots near the extreme ends of
+each image, well separated from either of the \spock transient events.
+In the less distorted host image 11.3 the bluer and younger stars are
+concentrated near the center. Taken together, these color and age
+gradients suggest that the two transients are not coincident with the
+center of their host galaxy.
+
+\input{muse_linefits}
+
+In addition to the \HST imaging data, we also have spatially resolved
+spectroscopy from the MUSE integral field data.  The only significant
+spectral line feature for the \spock host is the \forbidden{O}{ii}
+$\lambda\lambda$ 3726, 3729 doublet, observed at 7474 and 7478 \AA.
+To examine this feature in detail, one-dimensional spectra were
+extracted from the three-dimensional MUSE data cube at a series of
+locations along the \spock host-galaxy arc.
+
+Supplementary Figure~\ref{fig:MUSEOIISequence} depicts the apertures used for these
+extractions, shows the observed \forbidden{O}{ii} lines at the
+\spock-NW and SE positions, and compares the \forbidden{O}{ii} line
+profiles to other positions along the length of the host-galaxy arc.
+At each position the lines were extracted using apertures with a
+radius of $0.6''$, so adjacent extractions are not independent,
+although the two extractions centered on the \spockone and -SE
+positions have no overlap.  
+
+A difference in the shape of the \forbidden{O}{ii} lines or the
+doublet line ratio could provide evidence for a different environment
+at the two \spock locaions, which would suggest that the two events
+emerged from independent sources.  For a visual test for spectral
+deviations, we first constructed a mean spectrum by averaging the 1-D
+spectra from five non-overlapping apertures (apertures 1, 3, 5, 7,
+9). To account for differences in magnification and host-galaxy
+intensity across the arc, each input spectrum was normalized at the
+wavelength 7477.7 \AA, which corresponds to the center of the
+$\lambda$3729 component of the \forbidden{O}{ii} emission line.  This
+mean spectrum was then subtracted from the 1-D spectrum of each
+aperture, producing a set of ``residual spectra,'' shown in
+Supplementary Figure~\ref{fig:MUSEOIISequence} in the lower-left panel.  These
+spectra show no indication of a systematic trend in the wavelength
+position, shape or line ratio across the arc.  Similarly, a comparison
+of the spectra from the \spock-NW and SE locations (right panels of
+Supplementary Figure~\ref{fig:MUSEOIISequence}) reveals no significant difference in
+the \forbidden{O}{ii} line shapes.
+
+This qualitative comparison is borne out by a more quantitative
+assessment, reported in Table~\ref{tab:MuseLineFits}. We fit a
+Gaussian profile to each component of the \forbidden{O}{ii} doublet,
+separately in each extracted 1-D spectrum. From these fits we measured
+the integrated line flux, observed wavelength of line center
+($\lambda_{\rm center}$), full width at half maximum intensity (FWHM), and the
+intensity ratio of the two components of the doublet.  These
+quantities---all reported in Table~\ref{tab:MuseLineFits}---do not
+exhibit any discernible gradient across the host galaxy.  Thus, the
+\forbidden{O}{ii} measurements from MUSE cannot be used to distinguish
+either \spock location from the other, or to definitively answer
+whether either position is coincident with the center of the host
+galaxy (as would be required, for example, if these transients were
+from an AGN).  We conclude that it is entirely plausible but not
+certain that the two \spock events arose from the same physical
+location in the host galaxy.
+

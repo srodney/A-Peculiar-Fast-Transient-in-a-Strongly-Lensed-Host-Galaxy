@@ -1,0 +1,82 @@
+\documentclass{nature_arxiv}
+\input{preamble_nature}
+
+\bibliographystyle{naturemag}
+
+\input{TitleAndAuthors}
+
+\begin{document}
+
+\maketitle
+
+\vspace{10pt}
+\input{Abstract}
+\vspace{10pt}
+
+\makeaffil
+
+%\begin{multicols}{2}
+\input{IntroductionShort}
+\input{Figures}
+
+\input{Results}
+
+\input{Discussion}
+
+%\end{multicols}
+
+%% Put the bibliography here, most people will use BiBTeX in
+%% which case the environment below should be replaced with
+%% the \bibliography{} command.
+
+%\bibliography{./bibliography/biblio}{}
+\input{ms.bbl}
+
+
+\clearpage
+\begin{methods}
+ %Put methods in here.  If you are going to subsection it, use
+ %\verb|\subsection| commands.  Methods section should be less than
+ %800 words and if it is less than 200 words, it can be incorporated
+ %into the main text.
+ 
+ \input{Observations}
+ \input{LensingModels}
+ \input{Xray}
+ \input{LightCurves}
+ \input{LBV}
+ \input{RN}
+ \input{MicroLensing}
+ \input{ColorCurves}
+ \input{Rates}
+ 
+\end{methods}
+
+
+%% Here is the endmatter stuff: Supplementary Info, etc.
+%% Use \item's to separate, default label is "Acknowledgements"
+
+\begin{addendum}
+ \item[Supplementary Information] Supplementary figures, tables and notes are included at the end of this document.
+ \item \input{Acknowledgments}
+ % \item[Competing Interests] The authors declare that they have no
+% competing financial interests.
+ \item[Correspondence] Correspondence and requests for materials
+should be addressed to S.A.R.~(email: srodney@sc.edu).
+\end{addendum}
+
+%%
+%% TABLES
+%%
+%% If there are any tables, put them here.
+%%
+
+% Supplemental figures, notes and tables
+\clearpage
+\begin{supplementary}
+\input{Supplementary}
+\end{supplementary}
+
+\input{methods_and_supplementary.bbl}
+
+\end{document}

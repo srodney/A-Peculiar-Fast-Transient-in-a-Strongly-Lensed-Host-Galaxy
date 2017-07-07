@@ -1,0 +1,156 @@
+\subsection{Lens Model Variations.}\label{sec:LensModelVariations}
+
+Supplementary Figure~\ref{fig:LensModelContours} presents probability
+distributions for the three magnifications and two time delay values
+of interest.  These distributions were derived by combining the Monte
+Carlo chains from the CATS, GLAFIC, GLEE, and ZLTM models, and
+individual runs of the GRALE model, which uses a different random seed
+for each run.  We applied a weight to each model to account for the
+different number of model iterations used by each modeling team. All
+five of these models agree that host image 11.3 is the leading image,
+appearing some 3--7 years before the other two images.  The models do
+not agree on the arrival sequence of images 11.1 and 11.2: some have
+the NW image 11.2 as a leading image, and others have it as a trailing
+image.  However, the models do consistently predict that the
+separation in time between those two images should be roughly in the
+range of 1 to 60 days.
+
+Because of the proximity of the critical curves in all models, the
+predicted time delays and magnification factors are significantly
+different if calculated at the model-predicted positions instead of
+the observed positions.  For example, in the GLEE model series (GLEE
+and GLEE-var) when switching from the observed to model-predicted
+positions the arrival order of the NW and SE images flips, the
+expected time delay drops from tens of days to $<$1 day, and the
+magnifications change by 30-60\%.  However, the expected
+magnifications and time delays between the events still fall within
+the broad ranges summarized in Table~\ref{tab:LensModelPredictions}
+and shown in Supplementary Figure~\ref{fig:LensModelContours}.  Regardless of
+whether the model predictions are extracted at the observed or
+predicted positions of the \spock events, none of the lens models can
+accommodate the observed 234-day time difference as purely a
+gravitational lensing time delay.
+
+We used variations of several lens models to investigate how the
+lensing critical curves shift under a range of alternative assumptions
+or input constraints.  These variations highlight the range of
+systematic effects that might impact the model predictions for the
+\spock magnifications, time delays and proximity to the critical
+curves.  Figure~\ref{fig:SpockCriticalCurves} shows the critical
+curves for a source at $z=1$ (the redshift of the \spock host galaxy)
+predicted by our seven baseline models, plus the four variations
+described below.  Within a given model, variations that move a
+critical curve closer to the position of \spockone\ would drive the
+magnification of that event much higher (toward $\mu_{\rm
+  NW}\approx200$).  This generally also has the effect of moving the
+critical curve farther from \spocktwo, which would necessarily drive
+its magnification downward (toward $\mu_{\rm SE}\approx10$).
+
+The baseline CATS model reported in
+Table~\ref{tab:LensModelPredictions} corresponds to the CATSv4.1 model
+published on the STScI Frontier Fields lens model repository
+(\url{https://archive.stsci.edu/pub/hlsp/frontier/macs0416/models/cats/v4.1/}).
+That model uses 178 cluster member galaxies, including a galaxy $<5''$
+south of the \spock host galaxy, which creates a local critical curve
+that intersects the \spocktwo location.  Our CATS-var model is an
+earlier iteration of the model, published on the STScI repository as
+CATSv4
+(\url{https://archive.stsci.edu/pub/hlsp/frontier/macs0416/models/cats/v4/}),
+and includes only 98 galaxies identified as cluster members.  In this
+variation the nearby cluster member galaxy is not included, so the
+\spocktwo event is not intersected by a critical curve. However, the
+\spockone event is approximately coincident with the primary critical
+curve of the \macs0416 cluster.  When the critical curve is close to
+either \spock location, the magnifications predicted by the CATS model
+are driven up to $\mu>100$.  However, the time delays remain small, on
+the order of tens of days, and incompatible with the observed 234-day
+gap.
+
+The WSLAP-var model evaluates whether the cluster redshift
+significantly impacts the positioning of the critical curve. In this
+merging cluster, the northern brightest cluster galaxy (BCG) has a
+slighter higher redshift than the southern BCG. The mean redshift of
+the cluster is not precisely determined, since it is likely to be
+aligned somewhat along the line of sight.  For the WSLAP-var model we
+shift the assumed cluster redshift $z=0.4$ from the default $z=0.396$
+(used in all the baseline models).  The shift in the critical curve is
+noticeable, but not substantial, insofar as this change does not drive
+the critical curve to intersect either or both of the \spock
+locations.
+
+The GLEE-var model is a multi-plane lens model (Chiriv{\`i} et al.,~in
+prep.) that incorporates 13 galaxies with spectroscopic redshifts that
+place them either in the foreground or background of the \macs0416
+cluster.  Supplementary Figure~\ref{fig:LineOfSightLenses} marks these
+13 galaxies and highlights two of them that appear in the foreground
+of the \spock host galaxy and are close to the lines of sight to the
+\spock transients. Both the foreground $z=0.0557$ galaxy and the
+reconstructed position of the $z=0.9397$ galaxy have a projected
+separation of $<$4\arcsec from the \spocktwo transient position.
+Including these galaxies in the GLEE lensing model changes the
+absolute value of the magnifications at the location of HFF14Spo-NW
+(HFF14Spo-SE) to $\sim70$ ($\sim250$) and the time delay between the
+two locations to $\sim50$ days.  The line-of-sight galaxies also
+result in a shift of the position of the critical curve---as can be
+seen by comparing the GLEE and GLEE-var models in
+Figure~\ref{fig:SpockCriticalCurves}. Nonetheless, the predicted time
+delays are still incompatible with the observed gap of 234 days
+between events.
+
+The GLAFIC-var model examines whether it is plausible for a critical
+curve to intersect both \spock locations---contrary to the baseline
+assumption of a single critical curve subtending the \spock host
+galaxy roughly midway between the two positions.  This model includes
+a customized constraint, requiring that the magnification factors at
+the \spock positons are $>1000$.  To achieve this, we independently
+adjusted the mass scaling for the two nearest cluster member galaxies,
+which are located just northeast and south of the \spock host galaxy
+arc.  The mass of the northeast member galaxy was increased by
+$\sim$30\% and that of the southern one by $\sim$60\%.  As a simple
+check of the predicted morphology of the host galaxy, we placed a
+source with a simple Sersic profile\cite{Sersic:1963} on the source
+plane. The lensed image of that artificial source is an unbroken
+elongated arc, reproducing the host galaxy image morphology reasonably
+well.
+
+For this modification of the GLAFIC lens model to be justified in a
+statistical sense, the revised model should still accurately reproduce
+the observed strong-lensing constraints across the entire cluster.
+The $\chi^2$ statistic for the baseline GLAFIC model is 240, with 196
+degrees of freedom ($\chi^2_\nu=1.2$), and yields an Akaike
+information criterion (AIC)\citep{Akaike:1974} of 676.  For the
+GLAFIC-var model that forces multiple critical curves to intersect the
+\spock locations, we get $\chi^2$=331 for 192 degrees of freedom
+($\chi^2_\nu=1.7$) and AIC=769.  This suggests that the multiple
+critical curve GLAFIC-var model is strongly disfavored by the
+{\it positional} strong-lensing constraints that are used for both models.
+However, we note that neither model incorporates the temporal
+constraints of the observed time delay. 
+
+A second variation of the CATS model (CATS-var2) was also used to test
+the plausibility of multiple critical curves intersecting the \spock
+locations.  As in the GLAFIC-var case, this model requires that
+critical curves pass very near the \spock positions.  The model can
+accommodate that constraint, insofar as the root mean square (RMS)
+error of the best-fit model is similar to that of the CATS and
+CATS-var models.  However, in this CATS-var2 model the \spock host
+galaxy is predicted to be multiply-imaged 5 times. The \HST images do
+not exhibit any breaks or substructure in the arc that would be
+generally expected in such a situation.  
+
+Moreover, this CATS-var2 model has strong implications for a separate
+background galaxy in the vicinity of image 11.3 (system 14 in
+\citeref{Caminha:2017}).  This galaxy is strongly lensed by a pair of
+spectroscopically confirmed cluster member galaxies\citep{Caminha:2017}. Comparing the observed positions of the multiple
+images of System 14 against the CATS-var2 model-predicted positions,
+we find that this System contributes significantly to the global RMS
+error for the model---indicating that the CATS-var2 model can not
+accurately reproduce the multiple images of System 14.  Conversely,
+when this system is removed as a model constraint, the RMS error
+decreases, and the CATS-var2 model can more successfully pass the
+critical line through the two \spock locations.  A possible
+interpretation of this is that the established strong lensing
+constraints (especially System 14) are incompatible with the
+requirement that multiple critical curves must intersect the two
+\spock locations.
+
