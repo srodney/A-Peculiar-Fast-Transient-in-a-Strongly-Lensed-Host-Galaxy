@@ -43,6 +43,16 @@ natureupdate:
 	open $(NATUREFILE).pdf
 
 
+SUPPLEMENTAL=Supplementary
+supplement: 
+	pdflatex $(SUPPLEMENTAL).tex
+	#bibtex $(SUPPLEMENTAL)
+	#pdflatex $(SUPPLEMENTAL).tex
+	pdflatex $(SUPPLEMENTAL).tex
+	open $(SUPPLEMENTAL).pdf
+
+
+
 arxiv: nature
 
 arxivupdate: natureupdate
