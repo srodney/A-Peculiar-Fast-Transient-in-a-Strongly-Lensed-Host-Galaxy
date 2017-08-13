@@ -29,23 +29,30 @@ clean:
 
 
 #Generate a pdf file using a Nature latex style file
-NATUREFILE=spock_arxiv
+NATUREFILE=spock_natureastronomy_finalsubmission
 nature: 
-	pdflatex $(NATUREFILE).tex
-	bibtex $(NATUREFILE)
 	pdflatex $(NATUREFILE).tex
 	pdflatex $(NATUREFILE).tex
 	open $(NATUREFILE).pdf
 
-NATUREFILE=spock_arxiv
 natureupdate: 
 	pdflatex $(NATUREFILE).tex
 	open $(NATUREFILE).pdf
 
 
-arxiv: nature
+ARXIVFILE=spock_arxiv
+arxiv: 
+	pdflatex $(ARXIVFILE).tex
+	bibtex $(ARXIVFILE)
+	pdflatex $(ARXIVFILE).tex
+	pdflatex $(ARXIVFILE).tex
+	open $(ARXIVFILE).pdf
 
-arxivupdate: natureupdate
+arxivupdate: 
+	pdflatex $(ARXIVFILE).tex
+	open $(ARXIVFILE).pdf
+
+
 
 #Generate a pdf file using a modified python script from et_eq
 local: 
