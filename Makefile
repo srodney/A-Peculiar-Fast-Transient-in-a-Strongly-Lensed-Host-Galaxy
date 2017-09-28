@@ -39,6 +39,12 @@ natureupdate:
 	pdflatex $(NATUREFILE).tex
 	open $(NATUREFILE).pdf
 
+naturebib: 
+	pdflatex $(NATUREFILE).tex
+	bibtex $(NATUREFILE)
+	pdflatex $(NATUREFILE).tex
+	pdflatex $(NATUREFILE).tex
+	open $(NATUREFILE).pdf
 
 ARXIVFILE=spock_arxiv
 arxiv: 
