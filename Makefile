@@ -21,7 +21,7 @@
 # Set the variable PAPER to the root name of your .tex document
 PAPER= spock_localbuild
 
-default: local
+default: nature
 
 all: clean local
 clean:
